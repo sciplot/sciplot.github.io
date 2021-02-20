@@ -347,30 +347,30 @@
     <span class="c1">// Create values for your x-axis</span>
     <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
 
-    <span class="c1">// Create a Figure object</span>
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
     <span class="c1">// Set color palette</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span>
 
     <span class="c1">// Draw a sine graph putting x on the x-axis and sin(x) on the y-axis</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
 
     <span class="c1">// Draw a cosine graph putting x on the x-axis and cos(x) on the y-axis</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
 
-    <span class="c1">// Show the figure in a popup window</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
 
-    <span class="c1">// Save the figure to a PDF file</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;figure.pdf&quot;</span><span class="p">);</span>
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;plot.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>After compiling and executing this C++ application, the following figure (<code>figure.pdf</code>) is produced:</p>
-<p><img alt="Plotting sin(x) and cos(x)" loading="lazy" src="img/home/demo-figure-palette-set2.svg" /></p>
+<p>After compiling and executing this C++ application, the following plot (<code>plot.pdf</code>) is produced:</p>
+<p><img alt="Plotting sin(x) and cos(x)" loading="lazy" src="img/home/demo-plot-palette-set2.svg" /></p>
 <p>Do you want to change the colors?</p>
-<p>Simple - just use method <code>Figure::palette</code> to set your preferred color palette. For example, using <code>plt.palette("parula")</code> in the previous code sets the <a href="https://www.mathworks.com/help/matlab/ref/parula.html">parula</a> color scheme and produces the following figure:</p>
-<p><img alt="Plotting sin(x) and cos(x)" loading="lazy" src="img/home/demo-figure-palette-parula.svg" /></p>
+<p>Simple - just use method <code>Plot::palette</code> to set your preferred color palette. For example, using <code>plot.palette("parula")</code> in the previous code sets the <a href="https://www.mathworks.com/help/matlab/ref/parula.html">parula</a> color scheme and produces the following plot:</p>
+<p><img alt="Plotting sin(x) and cos(x)" loading="lazy" src="img/home/demo-plot-palette-parula.svg" /></p>
 <p>All available color palettes and their names can be found <a href="https://github.com/sciplot/gnuplot-palettes">here</a>. Many thanks to <a href="https://github.com/aschn">Anna Schneider</a> for this incredible work of art!</p>
                 
               

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['palette_557',['palette',['../classsciplot_1_1Figure.html#acd50f56fe40bf4f68712d5e0ed595456',1,'sciplot::Figure::palette()'],['../classsciplot_1_1Figures.html#ad1275f8eb0054d2f41534f816b2bd806',1,'sciplot::Figures::palette()']]],
-  ['pattern_558',['pattern',['../classsciplot_1_1FillStyleSpecs.html#ade2c3f4f78f64e50883223827a6190f7',1,'sciplot::FillStyleSpecs']]],
-  ['pi_559',['pi',['../structsciplot_1_1gnuplot_1_1angle.html#ada8140e21c1f738c0223d2794c964b88',1,'sciplot::gnuplot::angle']]],
+  ['palette_556',['palette',['../classsciplot_1_1Figure.html#ae2a59be1a03bb49a39c661558b691a10',1,'sciplot::Figure::palette()'],['../classsciplot_1_1Plot.html#acd50f56fe40bf4f68712d5e0ed595456',1,'sciplot::Plot::palette()']]],
+  ['pattern_557',['pattern',['../classsciplot_1_1FillStyleSpecs.html#ade2c3f4f78f64e50883223827a6190f7',1,'sciplot::FillStyleSpecs']]],
+  ['pi_558',['pi',['../structsciplot_1_1gnuplot_1_1angle.html#ada8140e21c1f738c0223d2794c964b88',1,'sciplot::gnuplot::angle']]],
+  ['plot_559',['Plot',['../classsciplot_1_1Plot.html#a3e1213e7fb3ae94ab2b7310a31cfbada',1,'sciplot::Plot']]],
   ['pointsize_560',['pointSize',['../classsciplot_1_1PointSpecsOf.html#a6dc8b57a7b395e498fd96d3cc2fd809d',1,'sciplot::PointSpecsOf']]],
   ['pointspecsof_561',['PointSpecsOf',['../classsciplot_1_1PointSpecsOf.html#a7c6c179b7bde91b7450ff9616e231864',1,'sciplot::PointSpecsOf']]],
   ['pointtype_562',['pointType',['../classsciplot_1_1PointSpecsOf.html#a769d2640ad32325e0940937b396d87c8',1,'sciplot::PointSpecsOf']]],

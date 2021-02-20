@@ -472,26 +472,26 @@
     <span class="c1">// Create a vector with values from 0 to pi divived into 200 uniform intervals for the x-axis</span>
     <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">PI</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
 
-    <span class="c1">// Create a Figure object</span>
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
     <span class="c1">// Set the x and y labels</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
 
     <span class="c1">// Set the x and y ranges</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">xrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">PI</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">PI</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
 
     <span class="c1">// Plot i*sin(x) from i = 1 to i = 6</span>
     <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">6</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">i</span> <span class="o">*</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;⋅sin(x)&quot;</span><span class="p">);</span>
+        <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">i</span> <span class="o">*</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;⋅sin(x)&quot;</span><span class="p">);</span>
 
-    <span class="c1">// Show the figure in a pop-up window</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
 
-    <span class="c1">// Save the figure to a PDF file</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-sine-functions.pdf&quot;</span><span class="p">);</span>
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-sine-functions.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="/img/tutorials/example-sine-functions.svg" /></p>
@@ -517,27 +517,27 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="c1">// Create a Figure object</span>
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
     <span class="c1">// Set the x and y labels</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;J_v(x)&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;J_v(x)&quot;</span><span class="p">);</span>
 
     <span class="c1">// Plot the Bessel functions</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J0</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_0&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J1</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_1&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J2</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_2&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J3</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_3&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J4</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_4&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J5</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_5&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J6</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_6&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J0</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_0&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J1</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_1&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J2</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_2&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J3</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_3&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J4</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_4&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J5</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_5&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">J6</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;J_6&quot;</span><span class="p">);</span>
 
-    <span class="c1">// Show the figure in a popup window</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
 
-    <span class="c1">// Save the figure to a PDF file</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-bessel-functions.pdf&quot;</span><span class="p">);</span>
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-bessel-functions.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="/img/tutorials/example-bessel-functions.svg" /></p>
@@ -550,23 +550,23 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
     <span class="c1">// Create a vector with values from 0 to 5 divived into 200 uniform intervals for the x-axis</span>
     <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
 
-    <span class="c1">// Create 4 different figures</span>
-    <span class="n">Figure</span> <span class="n">fig0</span><span class="p">;</span>
-    <span class="n">fig0</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">);</span>
-    <span class="n">fig0</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">);</span>
+    <span class="c1">// Create 4 different plots</span>
+    <span class="n">Plot</span> <span class="n">plot0</span><span class="p">;</span>
+    <span class="n">plot0</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">);</span>
+    <span class="n">plot0</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">);</span>
 
-    <span class="n">Figure</span> <span class="n">fig1</span><span class="p">;</span>
-    <span class="n">fig1</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">);</span>
+    <span class="n">Plot</span> <span class="n">plot1</span><span class="p">;</span>
+    <span class="n">plot1</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">);</span>
 
-    <span class="n">Figure</span> <span class="n">fig2</span><span class="p">;</span>
-    <span class="n">fig2</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">tan</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;tan(x)&quot;</span><span class="p">);</span>
+    <span class="n">Plot</span> <span class="n">plot2</span><span class="p">;</span>
+    <span class="n">plot2</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">tan</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;tan(x)&quot;</span><span class="p">);</span>
 
-    <span class="n">Figure</span> <span class="n">fig3</span><span class="p">;</span>
-    <span class="n">fig3</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sqrt(x)&quot;</span><span class="p">);</span>
+    <span class="n">Plot</span> <span class="n">plot3</span><span class="p">;</span>
+    <span class="n">plot3</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sqrt(x)&quot;</span><span class="p">);</span>
 
-    <span class="c1">// Use the previous figures as sub-figures in a larger 2x2 figure.</span>
-    <span class="n">Figures</span> <span class="n">fig</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">fig0</span><span class="p">,</span> <span class="n">fig1</span> <span class="p">},</span>
-                   <span class="p">{</span> <span class="n">fig2</span><span class="p">,</span> <span class="n">fig3</span> <span class="p">}};</span>
+    <span class="c1">// Use the previous plots as sub-figures in a larger 2x2 figure.</span>
+    <span class="n">Figure</span> <span class="n">fig</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">plot0</span><span class="p">,</span> <span class="n">plot1</span> <span class="p">},</span>
+                  <span class="p">{</span> <span class="n">plot2</span><span class="p">,</span> <span class="n">plot3</span> <span class="p">}};</span>
 
     <span class="n">fig</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">&quot;Trigonometric Functions&quot;</span><span class="p">);</span>
     <span class="n">fig</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;dark2&quot;</span><span class="p">);</span>
@@ -585,23 +585,23 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
     <span class="c1">// Create values for your x-axis</span>
     <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
 
-    <span class="c1">// Create a Figure object</span>
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
     <span class="c1">// Set color palette</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span>
 
     <span class="c1">// Draw a sine graph putting x on the x-axis and sin(x) on the y-axis</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
 
     <span class="c1">// Draw a cosine graph putting x on the x-axis and cos(x) on the y-axis</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
 
-    <span class="c1">// Show the figure in a popup window</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
 
-    <span class="c1">// Save the figure to a PDF file</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-trigonometric-functions.pdf&quot;</span><span class="p">);</span>
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-trigonometric-functions.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="/img/tutorials/example-sincos-functions.svg" /></p>
@@ -617,33 +617,33 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
     <span class="c1">// Create a vector with y values</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">{</span><span class="mi">-4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">-3</span><span class="p">};</span>
 
-    <span class="c1">// Create a Figure object</span>
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
     <span class="c1">// Set the legend</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">legend</span><span class="p">().</span><span class="n">hide</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">legend</span><span class="p">().</span><span class="n">hide</span><span class="p">();</span>
 
     <span class="c1">// Set the x and y labels</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
 
     <span class="c1">// Set the y range</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mi">-5</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mi">-5</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
 
     <span class="c1">// Add values to plot</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawBoxes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawBoxes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
         <span class="p">.</span><span class="n">fillSolid</span><span class="p">()</span>
         <span class="p">.</span><span class="n">fillColor</span><span class="p">(</span><span class="s">&quot;green&quot;</span><span class="p">)</span>
         <span class="p">.</span><span class="n">fillIntensity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
 
     <span class="c1">// Adjust the relative width of the boxes</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">boxWidthRelative</span><span class="p">(</span><span class="mf">0.75</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">boxWidthRelative</span><span class="p">(</span><span class="mf">0.75</span><span class="p">);</span>
 
-    <span class="c1">// Show the figure in a pop-up window</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
 
-    <span class="c1">// Save the figure to a PDF file</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-boxes.pdf&quot;</span><span class="p">);</span>
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-boxes.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="/img/tutorials/example-boxes.svg" /></p>
@@ -662,18 +662,18 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
     <span class="c1">// Create a vector with the xwidth values for the boxes</span>
     <span class="n">Vec</span> <span class="n">experiences</span> <span class="o">=</span> <span class="p">{</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">};</span>
 
-    <span class="c1">// Create a Figure object</span>
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
-    <span class="c1">// Set the legend to the top left corner of the figure</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">legend</span><span class="p">().</span><span class="n">atTopLeft</span><span class="p">();</span>
+    <span class="c1">// Set the legend to the top left corner of the plot</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">legend</span><span class="p">().</span><span class="n">atTopLeft</span><span class="p">();</span>
 
     <span class="c1">// Set the y label and its range</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;Age&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;Age&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
 
     <span class="c1">// Plot the boxes using y values.</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawBoxes</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">ages</span><span class="p">,</span> <span class="n">experiences</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawBoxes</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">ages</span><span class="p">,</span> <span class="n">experiences</span><span class="p">)</span>
         <span class="p">.</span><span class="n">fillSolid</span><span class="p">()</span>
         <span class="p">.</span><span class="n">fillColor</span><span class="p">(</span><span class="s">&quot;pink&quot;</span><span class="p">)</span>
         <span class="p">.</span><span class="n">fillIntensity</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
@@ -681,15 +681,15 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
         <span class="p">.</span><span class="n">labelNone</span><span class="p">();</span>
 
     <span class="c1">// Adjust the relative width of the boxes</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">boxWidthRelative</span><span class="p">(</span><span class="mf">0.75</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">boxWidthRelative</span><span class="p">(</span><span class="mf">0.75</span><span class="p">);</span>
 
-    <span class="n">fig</span><span class="p">.</span><span class="n">autoclean</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">autoclean</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
 
-    <span class="c1">// Show the figure in a pop-up window</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
 
-    <span class="c1">// Save the figure to a PDF file</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-boxes-ticklabels.pdf&quot;</span><span class="p">);</span>
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-boxes-ticklabels.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="/img/tutorials/example-boxes-ticklabels.svg" /></p>
@@ -706,17 +706,17 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <span class="p">{</span>
     <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">PI</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
 
-    <span class="n">Figure</span> <span class="n">fig</span><span class="p">;</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
 
-    <span class="n">fig</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
 
-    <span class="n">fig</span><span class="p">.</span><span class="n">xrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">PI</span><span class="p">);</span>
-    <span class="n">fig</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">PI</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">yrange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
 
-    <span class="n">fig</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">);</span>
 
-    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;my-sine-plot.pdf&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;my-sine-plot.pdf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></p>
 <p><strong>CMakeLists.txt</strong></p>

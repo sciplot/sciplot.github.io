@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cleanup_448',['cleanup',['../classsciplot_1_1Figure.html#a0631220457cca998fba3907781b22368',1,'sciplot::Figure::cleanup()'],['../classsciplot_1_1Figures.html#a0631220457cca998fba3907781b22368',1,'sciplot::Figures::cleanup()']]],
+  ['cleanup_448',['cleanup',['../classsciplot_1_1Figure.html#a0631220457cca998fba3907781b22368',1,'sciplot::Figure::cleanup()'],['../classsciplot_1_1Plot.html#a0631220457cca998fba3907781b22368',1,'sciplot::Plot::cleanup()']]],
   ['clear_449',['clear',['../classsciplot_1_1BorderSpecs.html#ab7990b39dd3fa6239b243d5c5e38d6b7',1,'sciplot::BorderSpecs']]],
   ['clustered_450',['clustered',['../classsciplot_1_1HistogramStyleSpecs.html#a5898df94bb5a11c44c03f74ec268918c',1,'sciplot::HistogramStyleSpecs']]],
   ['clusteredwithgap_451',['clusteredWithGap',['../classsciplot_1_1HistogramStyleSpecs.html#a9f28f75296659345a6ef8b9e04697ab2',1,'sciplot::HistogramStyleSpecs']]],

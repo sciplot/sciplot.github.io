@@ -25,7 +25,7 @@ var searchData=
   ['attop_426',['atTop',['../classsciplot_1_1LegendSpecs.html#a9251c52c2ee124ddb52275fa3bfe97bc',1,'sciplot::LegendSpecs']]],
   ['attopleft_427',['atTopLeft',['../classsciplot_1_1LegendSpecs.html#a9c8def2f13e62f0ce015c14f5b4ab53c',1,'sciplot::LegendSpecs']]],
   ['attopright_428',['atTopRight',['../classsciplot_1_1LegendSpecs.html#a509d7f592b6bc6cab6c7fe7eb524941e',1,'sciplot::LegendSpecs']]],
-  ['autoclean_429',['autoclean',['../classsciplot_1_1Figure.html#a0f9cff2b457e5a083282c0dc679120b9',1,'sciplot::Figure::autoclean()'],['../classsciplot_1_1Figures.html#a0f9cff2b457e5a083282c0dc679120b9',1,'sciplot::Figures::autoclean()']]],
+  ['autoclean_429',['autoclean',['../classsciplot_1_1Figure.html#a0f9cff2b457e5a083282c0dc679120b9',1,'sciplot::Figure::autoclean()'],['../classsciplot_1_1Plot.html#a0f9cff2b457e5a083282c0dc679120b9',1,'sciplot::Plot::autoclean()']]],
   ['automatic_430',['automatic',['../classsciplot_1_1TicsSpecsMajor.html#a40ec5ed7876bc12cd628532f46ef2a78',1,'sciplot::TicsSpecsMajor::automatic()'],['../classsciplot_1_1TicsSpecsMinor.html#a8413ca8bedcd5afeea066a1a0556321f',1,'sciplot::TicsSpecsMinor::automatic()']]],
   ['axislabelspecs_431',['AxisLabelSpecs',['../classsciplot_1_1AxisLabelSpecs.html#a5d714144b53ac076f10b8af156608cc4',1,'sciplot::AxisLabelSpecs']]]
 ];

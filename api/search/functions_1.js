@@ -3,7 +3,7 @@ var searchData=
   ['back_432',['back',['../classsciplot_1_1DepthSpecsOf.html#a4ffcd0e73c18cb84f5ad9946c678293e',1,'sciplot::DepthSpecsOf']]],
   ['backvertical_433',['backVertical',['../classsciplot_1_1BorderSpecs.html#a828473e0d7b59c21830192b59c86db94',1,'sciplot::BorderSpecs']]],
   ['behind_434',['behind',['../classsciplot_1_1DepthSpecsOf.html#a2e9c72dcedc2dbe96f49596ba23399d5',1,'sciplot::DepthSpecsOf']]],
-  ['border_435',['border',['../classsciplot_1_1Figure.html#a71f3333d420e734dd9a482e2ea288f5c',1,'sciplot::Figure']]],
+  ['border_435',['border',['../classsciplot_1_1Plot.html#a71f3333d420e734dd9a482e2ea288f5c',1,'sciplot::Plot']]],
   ['borderhide_436',['borderHide',['../classsciplot_1_1FillSpecsOf.html#a030442ea1afa0908cbf827acb74d69dd',1,'sciplot::FillSpecsOf::borderHide()'],['../classsciplot_1_1FillStyleSpecs.html#a1df1676af91f7982201ec7520a94271a',1,'sciplot::FillStyleSpecs::borderHide()']]],
   ['borderlinecolor_437',['borderLineColor',['../classsciplot_1_1FillSpecsOf.html#aacffaf9169d631501cdc2f08d4026e18',1,'sciplot::FillSpecsOf::borderLineColor()'],['../classsciplot_1_1FillStyleSpecs.html#ac089a71d9321c0737091ebc65e5c04fb',1,'sciplot::FillStyleSpecs::borderLineColor()']]],
   ['borderlinewidth_438',['borderLineWidth',['../classsciplot_1_1FillSpecsOf.html#adcba8d9202ce82fd75633975430fa807',1,'sciplot::FillSpecsOf::borderLineWidth()'],['../classsciplot_1_1FillStyleSpecs.html#a9cf954ef781a6c9aed8112f9dbe74c2b',1,'sciplot::FillStyleSpecs::borderLineWidth()']]],
@@ -14,6 +14,6 @@ var searchData=
   ['bottomleftfront_443',['bottomLeftFront',['../classsciplot_1_1BorderSpecs.html#a5dc3fa3beea8fa3e02256d2c9e51c71b',1,'sciplot::BorderSpecs']]],
   ['bottomrightback_444',['bottomRightBack',['../classsciplot_1_1BorderSpecs.html#ae433a2ea9cf7b452bca5ac02d0d74acb',1,'sciplot::BorderSpecs']]],
   ['bottomrightfront_445',['bottomRightFront',['../classsciplot_1_1BorderSpecs.html#a4d9784a418efee304a42b8fd996750d9',1,'sciplot::BorderSpecs']]],
-  ['boxwidthabsolute_446',['boxWidthAbsolute',['../classsciplot_1_1Figure.html#a145b65ac9293570028f127c2fcb6cd25',1,'sciplot::Figure']]],
-  ['boxwidthrelative_447',['boxWidthRelative',['../classsciplot_1_1Figure.html#ac85205dfb45ef5468d2e148446f978f4',1,'sciplot::Figure']]]
+  ['boxwidthabsolute_446',['boxWidthAbsolute',['../classsciplot_1_1Plot.html#a145b65ac9293570028f127c2fcb6cd25',1,'sciplot::Plot']]],
+  ['boxwidthrelative_447',['boxWidthRelative',['../classsciplot_1_1Plot.html#ac85205dfb45ef5468d2e148446f978f4',1,'sciplot::Plot']]]
 ];
