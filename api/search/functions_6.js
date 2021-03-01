@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['gnuplot_524',['gnuplot',['../classsciplot_1_1Plot.html#ada957e9879a34fdc2e4ca87cd47c130f',1,'sciplot::Plot']]],
-  ['grid_525',['grid',['../classsciplot_1_1Plot.html#a8a67b6e94614289800b6cab7daad6856',1,'sciplot::Plot']]],
-  ['gridspecs_526',['GridSpecs',['../classsciplot_1_1GridSpecs.html#aeef36fcd844d5fc5ed161ffb13c8d08f',1,'sciplot::GridSpecs']]],
-  ['gridspecsbase_527',['GridSpecsBase',['../classsciplot_1_1GridSpecsBase.html#a89f4c86d15d686e129705d5fe199642f',1,'sciplot::GridSpecsBase']]]
+  ['gnuplot_526',['gnuplot',['../classsciplot_1_1Plot.html#ada957e9879a34fdc2e4ca87cd47c130f',1,'sciplot::Plot']]],
+  ['grid_527',['grid',['../classsciplot_1_1Plot.html#a8a67b6e94614289800b6cab7daad6856',1,'sciplot::Plot']]],
+  ['gridspecs_528',['GridSpecs',['../classsciplot_1_1GridSpecs.html#aeef36fcd844d5fc5ed161ffb13c8d08f',1,'sciplot::GridSpecs']]],
+  ['gridspecsbase_529',['GridSpecsBase',['../classsciplot_1_1GridSpecsBase.html#a89f4c86d15d686e129705d5fe199642f',1,'sciplot::GridSpecsBase']]]
 ];

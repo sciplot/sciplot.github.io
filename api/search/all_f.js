@@ -3,7 +3,7 @@ var searchData=
   ['sciplot_27s_20api_20reference_202',['sciplot&apos;s API Reference',['../index.html',1,'']]],
   ['samples_203',['samples',['../classsciplot_1_1Plot.html#a490021db824aadae9a40578e5420eba2',1,'sciplot::Plot']]],
   ['save_204',['save',['../classsciplot_1_1Figure.html#a283b71fb56b2ee8bf4a00dd5db302c59',1,'sciplot::Figure::save()'],['../classsciplot_1_1Plot.html#af3d573462b2544042b292ea2df3328e0',1,'sciplot::Plot::save()']]],
-  ['saveplotdata_205',['saveplotdata',['../classsciplot_1_1Figure.html#ac0a10ce760d2344f0bc53d69e298efda',1,'sciplot::Figure::saveplotdata()'],['../classsciplot_1_1Plot.html#a77db2446120d1f23e823040b1fca1ea5',1,'sciplot::Plot::savePlotData()']]],
+  ['saveplotdata_205',['savePlotData',['../classsciplot_1_1Plot.html#a77db2446120d1f23e823040b1fca1ea5',1,'sciplot::Plot::savePlotData()'],['../classsciplot_1_1Figure.html#ac0a10ce760d2344f0bc53d69e298efda',1,'sciplot::Figure::saveplotdata()']]],
   ['scaleby_206',['scaleBy',['../classsciplot_1_1TicsSpecsBaseOf.html#addc6ae9f6c222a8b23fc1a965adc73ad',1,'sciplot::TicsSpecsBaseOf']]],
   ['scalemajorby_207',['scaleMajorBy',['../classsciplot_1_1TicsSpecsBaseOf.html#a52b77b7d647706088c76dc404bd4096e',1,'sciplot::TicsSpecsBaseOf']]],
   ['scaleminorby_208',['scaleMinorBy',['../classsciplot_1_1TicsSpecsBaseOf.html#a56007500911517f5d52809e44710eebc',1,'sciplot::TicsSpecsBaseOf']]],
@@ -48,6 +48,7 @@ var searchData=
   ['stackback_247',['stackBack',['../classsciplot_1_1TicsSpecs.html#a874b786544efd1302a03d8afdd739b51',1,'sciplot::TicsSpecs']]],
   ['stackfront_248',['stackFront',['../classsciplot_1_1TicsSpecs.html#a4954caa77fc803f124c2c4d4d70e5045',1,'sciplot::TicsSpecs']]],
   ['start_249',['start',['../classsciplot_1_1TicsSpecsMajor.html#ab796069b66ffda8f761ddd1fd9ff780e',1,'sciplot::TicsSpecsMajor']]],
-  ['stylefill_250',['styleFill',['../classsciplot_1_1Plot.html#aa677f086c441b050d5d1cfc79c5161c5',1,'sciplot::Plot']]],
-  ['stylehistogram_251',['styleHistogram',['../classsciplot_1_1Plot.html#a552df2c968df3cc8f57366431d82a4a7',1,'sciplot::Plot']]]
+  ['stringordouble_250',['StringOrDouble',['../structsciplot_1_1StringOrDouble.html',1,'StringOrDouble'],['../structsciplot_1_1StringOrDouble.html#a4e86e2d3c4ca6a434a408ec709de65a4',1,'sciplot::StringOrDouble::StringOrDouble()'],['../structsciplot_1_1StringOrDouble.html#ac315c1be7cfc06d1b3b0691fac37ef9d',1,'sciplot::StringOrDouble::StringOrDouble(double val)'],['../structsciplot_1_1StringOrDouble.html#a831ff177fe1c6fc52126eeae38257b53',1,'sciplot::StringOrDouble::StringOrDouble(std::string val)'],['../structsciplot_1_1StringOrDouble.html#aba3877bc6dd5a590224a093ef9610e2e',1,'sciplot::StringOrDouble::StringOrDouble(const char *val)']]],
+  ['stylefill_251',['styleFill',['../classsciplot_1_1Plot.html#aa677f086c441b050d5d1cfc79c5161c5',1,'sciplot::Plot']]],
+  ['stylehistogram_252',['styleHistogram',['../classsciplot_1_1Plot.html#a552df2c968df3cc8f57366431d82a4a7',1,'sciplot::Plot']]]
 ];
