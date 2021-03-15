@@ -310,6 +310,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#plotting-broken-curves-when-nan-values-are-present" class="md-nav__link">
+    Plotting broken curves when NaN values are present
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#plotting-a-3d-helix-plot" class="md-nav__link">
     Plotting a 3D helix plot
   </a>
@@ -445,6 +452,13 @@
         <li class="md-nav__item">
   <a href="#plotting-boxes-with-custom-tick-labels" class="md-nav__link">
     Plotting boxes with custom tick labels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-broken-curves-when-nan-values-are-present" class="md-nav__link">
+    Plotting broken curves when NaN values are present
   </a>
   
 </li>
@@ -744,6 +758,30 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-boxes-ticklabels.svg" /></p>
+<h2 id="plotting-broken-curves-when-nan-values-are-present">Plotting broken curves when NaN values are present<a class="headerlink" href="#plotting-broken-curves-when-nan-values-are-present" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Create vectors with some missing y values</span>
+    <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">};</span>
+    <span class="n">Vec</span> <span class="n">y</span> <span class="o">=</span> <span class="p">{</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">7.3</span><span class="p">,</span> <span class="n">NaN</span><span class="p">,</span> <span class="mf">2.8</span><span class="p">,</span> <span class="mf">8.9</span><span class="p">,</span> <span class="n">NaN</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">};</span>
+
+    <span class="c1">// Create a Plot object</span>
+    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
+
+    <span class="c1">// This disables the deletion of the created gnuplot script and data file.</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">autoclean</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+
+    <span class="c1">// Plot the data</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawBrokenCurveWithPoints</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;broken lines&quot;</span><span class="p">);</span>
+
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-missing-data.pdf&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="" loading="lazy" src="../img/tutorials/example-missing-data.svg" /></p>
 <h2 id="plotting-a-3d-helix-plot">Plotting a 3D helix plot<a class="headerlink" href="#plotting-a-3d-helix-plot" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>

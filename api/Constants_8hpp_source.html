@@ -152,15 +152,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>sciplot {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> PI = 3.14159265359;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> GOLDEN_RATIO = 1.618034;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> GOLDEN_RATIO_INVERSE = 1.0 / GOLDEN_RATIO;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> INCH_TO_POINTS = 72.0; <span class="comment">// based on pdfcairo terminal conversion</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> POINT_TO_INCHES = 1.0 / INCH_TO_POINTS;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace sciplot</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// C++ includes</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>sciplot {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> PI = 3.14159265359;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> GOLDEN_RATIO = 1.618034;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> GOLDEN_RATIO_INVERSE = 1.0 / GOLDEN_RATIO;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> INCH_TO_POINTS = 72.0; <span class="comment">// based on pdfcairo terminal conversion</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> POINT_TO_INCHES = 1.0 / INCH_TO_POINTS;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;constexpr <span class="keyword">auto</span> NaN = std::numeric_limits&lt;double&gt;::quiet_NaN(); <span class="comment">// can be used to indicate missing values in a numeric vector</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">const</span> <span class="keyword">auto</span> MISSING_INDICATOR = <span class="stringliteral">&quot;\&quot;?\&quot;&quot;</span>; <span class="comment">// The string used to indicate missing y values.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace sciplot</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.20-->
 <!-- start footer part -->
@@ -170,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div> <!-- DOXYSTRAP RELATED -->
 </div> <!-- DOXYSTRAP RELATED -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 15 2021 09:59:57 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+Generated on Mon Mar 15 2021 12:44:34 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
 </small></address>
 </body>
 </html>
