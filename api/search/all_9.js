@@ -6,7 +6,7 @@ var searchData=
   ['labelnone_152',['labelNone',['../classsciplot_1_1DrawSpecs.html#ae4b8a4b27b98ae747ee39416a9bc5188',1,'sciplot::DrawSpecs']]],
   ['left_153',['left',['../classsciplot_1_1BorderSpecs.html#adf420dcd7d5861d0d1f9a1dd98e02206',1,'sciplot::BorderSpecs']]],
   ['leftvertical_154',['leftVertical',['../classsciplot_1_1BorderSpecs.html#a220e61bd76e1b85c23417dc28ee1c2f0',1,'sciplot::BorderSpecs']]],
-  ['legend_155',['legend',['../classsciplot_1_1Plot.html#aa5f8c000fa6078dca5a88ccfc2b298a6',1,'sciplot::Plot']]],
+  ['legend_155',['legend',['../classsciplot_1_1PlotBase.html#aa5f8c000fa6078dca5a88ccfc2b298a6',1,'sciplot::PlotBase']]],
   ['legendspecs_156',['LegendSpecs',['../classsciplot_1_1LegendSpecs.html',1,'LegendSpecs'],['../classsciplot_1_1LegendSpecs.html#ad4792b6491b540920a414f3a8f2d4ef5',1,'sciplot::LegendSpecs::LegendSpecs()']]],
   ['linecolor_157',['lineColor',['../classsciplot_1_1LineSpecsOf.html#a908342d3685d8086ed7027e9d8b4af88',1,'sciplot::LineSpecsOf']]],
   ['linespecs_158',['LineSpecs',['../classsciplot_1_1LineSpecs.html',1,'sciplot']]],

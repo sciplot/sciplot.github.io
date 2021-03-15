@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['figure_102',['Figure',['../classsciplot_1_1Figure.html',1,'Figure'],['../classsciplot_1_1Figure.html#ad37f6cddab131df4b3e82036f801e25d',1,'sciplot::Figure::Figure(const std::initializer_list&lt; std::initializer_list&lt; Plot &gt;&gt; &amp;plots)'],['../classsciplot_1_1Figure.html#a242b17b98093748a51ef5ad809837bc7',1,'sciplot::Figure::Figure(const std::vector&lt; std::vector&lt; Plot &gt;&gt; &amp;plots)']]],
+  ['figure_102',['Figure',['../classsciplot_1_1Figure.html',1,'Figure'],['../classsciplot_1_1Figure.html#ae6d2f5888c9965c7169e796456e5464a',1,'sciplot::Figure::Figure(const std::initializer_list&lt; std::initializer_list&lt; PlotXD &gt;&gt; &amp;plots)'],['../classsciplot_1_1Figure.html#a1b0664da264527482466c0152b92e385',1,'sciplot::Figure::Figure(const std::vector&lt; std::vector&lt; PlotXD &gt;&gt; &amp;plots)']]],
   ['fillcolor_103',['fillColor',['../classsciplot_1_1FillSpecsOf.html#a3a9af50d7624b7e717eff660811640a1',1,'sciplot::FillSpecsOf']]],
   ['fillempty_104',['fillEmpty',['../classsciplot_1_1FillSpecsOf.html#a8e1c910f46611cba981c866ce2317960',1,'sciplot::FillSpecsOf']]],
   ['fillintensity_105',['fillIntensity',['../classsciplot_1_1FillSpecsOf.html#ab19de6c23b4fead989c33906f2d06bb8',1,'sciplot::FillSpecsOf']]],
@@ -12,8 +12,8 @@ var searchData=
   ['fillspecsof_3c_20fillspecs_20_3e_111',['FillSpecsOf&lt; FillSpecs &gt;',['../classsciplot_1_1FillSpecsOf.html',1,'sciplot']]],
   ['fillstylespecs_112',['FillStyleSpecs',['../classsciplot_1_1FillStyleSpecs.html',1,'FillStyleSpecs'],['../classsciplot_1_1FillStyleSpecs.html#a1816fb654b68c719509dde73eb0f5f65',1,'sciplot::FillStyleSpecs::FillStyleSpecs()']]],
   ['filltransparent_113',['fillTransparent',['../classsciplot_1_1FillSpecsOf.html#a1a805b22d89083415ed7ca64a54a5fb0',1,'sciplot::FillSpecsOf']]],
-  ['fontname_114',['fontName',['../classsciplot_1_1Figure.html#a7870ee2a31c32387ebbc549203d51653',1,'sciplot::Figure::fontName()'],['../classsciplot_1_1Plot.html#a7870ee2a31c32387ebbc549203d51653',1,'sciplot::Plot::fontName()'],['../classsciplot_1_1FontSpecsOf.html#ad469e36de426524fadb18cd55b137e55',1,'sciplot::FontSpecsOf::fontName()']]],
-  ['fontsize_115',['fontSize',['../classsciplot_1_1Figure.html#a2563a9064f1992b8484d541bff02b6a2',1,'sciplot::Figure::fontSize()'],['../classsciplot_1_1Plot.html#a2563a9064f1992b8484d541bff02b6a2',1,'sciplot::Plot::fontSize()'],['../classsciplot_1_1FontSpecsOf.html#a077bf54701525e0618af8ce43e025201',1,'sciplot::FontSpecsOf::fontSize()']]],
+  ['fontname_114',['fontName',['../classsciplot_1_1Figure.html#a7870ee2a31c32387ebbc549203d51653',1,'sciplot::Figure::fontName()'],['../classsciplot_1_1PlotBase.html#a9882d4057b91b83e106dc615caf5f904',1,'sciplot::PlotBase::fontName()'],['../classsciplot_1_1FontSpecsOf.html#ad469e36de426524fadb18cd55b137e55',1,'sciplot::FontSpecsOf::fontName()']]],
+  ['fontsize_115',['fontSize',['../classsciplot_1_1Figure.html#a2563a9064f1992b8484d541bff02b6a2',1,'sciplot::Figure::fontSize()'],['../classsciplot_1_1PlotBase.html#a2563a9064f1992b8484d541bff02b6a2',1,'sciplot::PlotBase::fontSize()'],['../classsciplot_1_1FontSpecsOf.html#a077bf54701525e0618af8ce43e025201',1,'sciplot::FontSpecsOf::fontSize()']]],
   ['fontspecs_116',['FontSpecs',['../classsciplot_1_1FontSpecs.html',1,'sciplot']]],
   ['fontspecsof_117',['FontSpecsOf',['../classsciplot_1_1FontSpecsOf.html',1,'FontSpecsOf&lt; DerivedSpecs &gt;'],['../classsciplot_1_1FontSpecsOf.html#a6f109e18a352c7b3e70c763306933982',1,'sciplot::FontSpecsOf::FontSpecsOf()']]],
   ['fontspecsof_3c_20axislabelspecs_20_3e_118',['FontSpecsOf&lt; AxisLabelSpecs &gt;',['../classsciplot_1_1FontSpecsOf.html',1,'sciplot']]],

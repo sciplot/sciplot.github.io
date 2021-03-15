@@ -310,6 +310,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#plotting-a-3d-helix-plot" class="md-nav__link">
+    Plotting a 3D helix plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-multiple-mixed-2d-and-3d-plots" class="md-nav__link">
+    Plotting multiple mixed 2D and 3D plots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#integration-with-cmake-based-projects" class="md-nav__link">
     Integration with CMake-based projects
   </a>
@@ -431,6 +445,20 @@
         <li class="md-nav__item">
   <a href="#plotting-boxes-with-custom-tick-labels" class="md-nav__link">
     Plotting boxes with custom tick labels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-a-3d-helix-plot" class="md-nav__link">
+    Plotting a 3D helix plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-multiple-mixed-2d-and-3d-plots" class="md-nav__link">
+    Plotting multiple mixed 2D and 3D plots
   </a>
   
 </li>
@@ -716,6 +744,131 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <span class="p">}</span>
 </code></pre></div>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-boxes-ticklabels.svg" /></p>
+<h2 id="plotting-a-3d-helix-plot">Plotting a 3D helix plot<a class="headerlink" href="#plotting-a-3d-helix-plot" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Create a vector with values from 0 to 100 divived into 2000 uniform intervals for the z-axis</span>
+    <span class="n">Vec</span> <span class="n">z</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
+
+    <span class="c1">// Construct x and y for each z so that a helix curve is defined</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="nl">val</span> <span class="p">:</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">x</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">val</span><span class="o">/</span><span class="n">c</span><span class="p">));</span>
+        <span class="n">y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">val</span><span class="o">/</span><span class="n">c</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Create a Plot3D object</span>
+    <span class="n">Plot3D</span> <span class="n">plot</span><span class="p">;</span>
+
+    <span class="c1">// Set the x, y, z labels</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">zlabel</span><span class="p">(</span><span class="s">&quot;z&quot;</span><span class="p">);</span>
+
+    <span class="c1">// Clear all borders and set the visible ones</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">clear</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">bottomLeftFront</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">bottomRightFront</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">leftVertical</span><span class="p">();</span>
+
+    <span class="c1">// This disables the deletion of the created gnuplot script and data file.</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">autoclean</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+
+    <span class="c1">// Change its palette</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;dark2&quot;</span><span class="p">);</span>
+
+    <span class="c1">// Draw the helix curve</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;helix&quot;</span><span class="p">).</span><span class="n">lineColor</span><span class="p">(</span><span class="s">&quot;orange&quot;</span><span class="p">);</span>
+
+    <span class="c1">// Show the plot in a pop-up window</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+
+    <span class="c1">// Save the plot to a PDF file</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-3d-helix.pdf&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="" loading="lazy" src="../img/tutorials/example-3d-helix.svg" /></p>
+<h2 id="plotting-multiple-mixed-2d-and-3d-plots">Plotting multiple mixed 2D and 3D plots<a class="headerlink" href="#plotting-multiple-mixed-2d-and-3d-plots" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+
+<span class="k">auto</span> <span class="nf">createHelixPlot</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Create a vector with values from 0 to 100 divived into 2000 uniform intervals for the z-axis</span>
+    <span class="n">Vec</span> <span class="n">z</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
+
+    <span class="c1">// Construct x and y for each z so that a helix curve is defined</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="nl">val</span> <span class="p">:</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">x</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">val</span><span class="o">/</span><span class="n">c</span><span class="p">));</span>
+        <span class="n">y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">val</span><span class="o">/</span><span class="n">c</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Create the 3D plot for the helix</span>
+    <span class="n">Plot3D</span> <span class="n">plot</span><span class="p">;</span>
+
+    <span class="c1">// Draw the helix curve and set the label displayed in the legend</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">);</span>
+
+    <span class="c1">// Disable legend for this plot</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">legend</span><span class="p">().</span><span class="n">hide</span><span class="p">();</span>
+
+    <span class="c1">// Set the x, y, z labels</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">);</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">zlabel</span><span class="p">(</span><span class="s">&quot;z&quot;</span><span class="p">);</span>
+
+    <span class="c1">// Clear all borders and set the visible ones</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">clear</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">bottomLeftFront</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">bottomRightFront</span><span class="p">();</span>
+    <span class="n">plot</span><span class="p">.</span><span class="n">border</span><span class="p">().</span><span class="n">leftVertical</span><span class="p">();</span>
+
+    <span class="k">return</span> <span class="n">plot</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Create a vector with values from 0 to 5 divived into 200 uniform intervals for the x-axis</span>
+    <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+
+    <span class="c1">// Create 4 different plots</span>
+    <span class="n">Plot</span> <span class="n">plot0</span><span class="p">;</span>
+    <span class="n">plot0</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">);</span>
+    <span class="n">plot0</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">);</span>
+
+    <span class="n">Plot</span> <span class="n">plot1</span><span class="p">;</span>
+    <span class="n">plot1</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">);</span>
+
+    <span class="n">Plot</span> <span class="n">plot2</span><span class="p">;</span>
+    <span class="n">plot2</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">tan</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;tan(x)&quot;</span><span class="p">);</span>
+
+    <span class="n">Plot3D</span> <span class="n">plot3</span> <span class="o">=</span> <span class="n">createHelixPlot</span><span class="p">();</span>
+
+    <span class="c1">// Use the previous plots as sub-figures in a larger 2x2 figure.</span>
+    <span class="n">Figure</span> <span class="n">fig</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">plot0</span><span class="p">,</span> <span class="n">plot1</span> <span class="p">},</span>
+                  <span class="p">{</span> <span class="n">plot2</span><span class="p">,</span> <span class="n">plot3</span> <span class="p">}};</span>
+
+    <span class="n">fig</span><span class="p">.</span><span class="n">size</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">600</span><span class="p">);</span>
+
+    <span class="n">fig</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">&quot;Mixing 2D and 3D plots&quot;</span><span class="p">);</span>
+    <span class="n">fig</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;dark2&quot;</span><span class="p">);</span>
+    <span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+
+    <span class="c1">// Save the figure to a PDF file</span>
+    <span class="n">fig</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;example-multiplot-mixed.pdf&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="" loading="lazy" src="../img/tutorials/example-multiplot-mixed.svg" /></p>
 <h2 id="integration-with-cmake-based-projects">Integration with CMake-based projects<a class="headerlink" href="#integration-with-cmake-based-projects" title="Permanent link">&para;</a></h2>
 <p>Integrating <span style="font-family:'Comfortaa'">sciplot</span> in a CMake-based project is very simple as shown next.</p>
 <p>Let's assume our CMake-based project consists of two files: <code>main.cpp</code> and
