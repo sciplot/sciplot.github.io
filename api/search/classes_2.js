@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['columnindex_340',['ColumnIndex',['../structsciplot_1_1ColumnIndex.html',1,'sciplot']]]
+  ['columnindex_349',['ColumnIndex',['../structsciplot_1_1ColumnIndex.html',1,'sciplot']]]
 ];
