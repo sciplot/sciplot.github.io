@@ -18,5 +18,5 @@ var searchData=
   ['linestyle_175',['lineStyle',['../classsciplot_1_1LineSpecsOf.html#ae847ec2436067b5523c6f43de7c20127',1,'sciplot::LineSpecsOf']]],
   ['linetype_176',['lineType',['../classsciplot_1_1LineSpecsOf.html#a02000fa9e1ce17f7569a8b99b3bb66bc',1,'sciplot::LineSpecsOf']]],
   ['linewidth_177',['lineWidth',['../classsciplot_1_1LineSpecsOf.html#aec66d7ca89374640aaf920d36edec806',1,'sciplot::LineSpecsOf']]],
-  ['logscale_178',['logscale',['../classsciplot_1_1TicsSpecsMajor.html#aa8bb5df3654793f272a3ff64327276f1',1,'sciplot::TicsSpecsMajor']]]
+  ['logscale_178',['logscale',['../classsciplot_1_1TicsSpecsBaseOf.html#a5821ea18de11f4d98c1c48ad919bb574',1,'sciplot::TicsSpecsBaseOf']]]
 ];
