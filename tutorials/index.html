@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://sciplot.github.io/tutorials/">
       
       <link rel="icon" href="../img/logo.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
@@ -537,7 +537,7 @@
 <span style="font-family:'Comfortaa'">sciplot</span>, please consider helping with more examples!</p>
 <h2 id="plotting-sine-functions">Plotting sine functions<a class="headerlink" href="#plotting-sine-functions" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -583,7 +583,7 @@
 straight to plotting them! This example assumes that they have already been
 pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="c1">/// The x coordinates used to evaluate the Bessel functions of first kind from 0th to 6th order.</span>
 <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.16</span><span class="p">,</span> <span class="mf">0.32</span><span class="p">,</span> <span class="mf">0.48</span><span class="p">,</span> <span class="mf">0.64</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">,</span> <span class="mf">0.96</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.28</span><span class="p">,</span> <span class="mf">1.44</span><span class="p">,</span> <span class="mf">1.60</span><span class="p">,</span> <span class="mf">1.76</span><span class="p">,</span> <span class="mf">1.92</span><span class="p">,</span> <span class="mf">2.08</span><span class="p">,</span> <span class="mf">2.24</span><span class="p">,</span> <span class="mf">2.40</span><span class="p">,</span> <span class="mf">2.56</span><span class="p">,</span> <span class="mf">2.72</span><span class="p">,</span> <span class="mf">2.88</span><span class="p">,</span> <span class="mf">3.04</span><span class="p">,</span> <span class="mf">3.20</span><span class="p">,</span> <span class="mf">3.36</span><span class="p">,</span> <span class="mf">3.52</span><span class="p">,</span> <span class="mf">3.68</span><span class="p">,</span> <span class="mf">3.84</span><span class="p">,</span> <span class="mf">4.00</span><span class="p">,</span> <span class="mf">4.16</span><span class="p">,</span> <span class="mf">4.32</span><span class="p">,</span> <span class="mf">4.48</span><span class="p">,</span> <span class="mf">4.64</span><span class="p">,</span> <span class="mf">4.80</span><span class="p">,</span> <span class="mf">4.96</span><span class="p">,</span> <span class="mf">5.12</span><span class="p">,</span> <span class="mf">5.28</span><span class="p">,</span> <span class="mf">5.44</span><span class="p">,</span> <span class="mf">5.60</span><span class="p">,</span> <span class="mf">5.76</span><span class="p">,</span> <span class="mf">5.92</span><span class="p">,</span> <span class="mf">6.08</span><span class="p">,</span> <span class="mf">6.24</span><span class="p">,</span> <span class="mf">6.40</span><span class="p">,</span> <span class="mf">6.56</span><span class="p">,</span> <span class="mf">6.72</span><span class="p">,</span> <span class="mf">6.88</span><span class="p">,</span> <span class="mf">7.04</span><span class="p">,</span> <span class="mf">7.20</span><span class="p">,</span> <span class="mf">7.36</span><span class="p">,</span> <span class="mf">7.52</span><span class="p">,</span> <span class="mf">7.68</span><span class="p">,</span> <span class="mf">7.84</span><span class="p">,</span> <span class="mf">8.00</span><span class="p">,</span> <span class="mf">8.16</span><span class="p">,</span> <span class="mf">8.32</span><span class="p">,</span> <span class="mf">8.48</span><span class="p">,</span> <span class="mf">8.64</span><span class="p">,</span> <span class="mf">8.80</span><span class="p">,</span> <span class="mf">8.96</span><span class="p">,</span> <span class="mf">9.12</span><span class="p">,</span> <span class="mf">9.28</span><span class="p">,</span> <span class="mf">9.44</span><span class="p">,</span> <span class="mf">9.60</span><span class="p">,</span> <span class="mf">9.76</span><span class="p">,</span> <span class="mf">9.92</span><span class="p">,</span> <span class="mf">10.08</span><span class="p">,</span> <span class="mf">10.24</span><span class="p">,</span> <span class="mf">10.40</span><span class="p">,</span> <span class="mf">10.56</span><span class="p">,</span> <span class="mf">10.72</span><span class="p">,</span> <span class="mf">10.88</span><span class="p">,</span> <span class="mf">11.04</span><span class="p">,</span> <span class="mf">11.20</span><span class="p">,</span> <span class="mf">11.36</span><span class="p">,</span> <span class="mf">11.52</span><span class="p">,</span> <span class="mf">11.68</span><span class="p">,</span> <span class="mf">11.84</span><span class="p">,</span> <span class="mf">12.00</span><span class="p">,</span> <span class="mf">12.16</span><span class="p">,</span> <span class="mf">12.32</span><span class="p">,</span> <span class="mf">12.48</span><span class="p">,</span> <span class="mf">12.64</span><span class="p">,</span> <span class="mf">12.80</span><span class="p">,</span> <span class="mf">12.96</span><span class="p">,</span> <span class="mf">13.12</span><span class="p">,</span> <span class="mf">13.28</span><span class="p">,</span> <span class="mf">13.44</span><span class="p">,</span> <span class="mf">13.60</span><span class="p">,</span> <span class="mf">13.76</span><span class="p">,</span> <span class="mf">13.92</span><span class="p">,</span> <span class="mf">14.08</span><span class="p">,</span> <span class="mf">14.24</span><span class="p">,</span> <span class="mf">14.40</span><span class="p">,</span> <span class="mf">14.56</span><span class="p">,</span> <span class="mf">14.72</span><span class="p">,</span> <span class="mf">14.88</span><span class="p">,</span> <span class="mf">15.04</span><span class="p">,</span> <span class="mf">15.20</span><span class="p">,</span> <span class="mf">15.36</span><span class="p">,</span> <span class="mf">15.52</span><span class="p">,</span> <span class="mf">15.68</span><span class="p">,</span> <span class="mf">15.84</span><span class="p">,</span> <span class="mf">16.00</span><span class="p">};</span>
@@ -639,7 +639,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-bessel-functions.svg" /></p>
 <h2 id="plotting-filled-curves">Plotting filled curves<a class="headerlink" href="#plotting-filled-curves" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -690,7 +690,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-filled-curves.svg" /></p>
 <h2 id="using-logarithmic-axes">Using logarithmic axes<a class="headerlink" href="#using-logarithmic-axes" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -731,7 +731,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-logarithmic-axes.svg" /></p>
 <h2 id="plotting-multiple-plots">Plotting multiple plots<a class="headerlink" href="#plotting-multiple-plots" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -766,7 +766,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-multiplot.svg" /></p>
 <h2 id="ploting-trigonometric-functions">Ploting trigonometric functions<a class="headerlink" href="#ploting-trigonometric-functions" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -795,7 +795,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-sincos-functions.svg" /></p>
 <h2 id="plotting-boxes">Plotting boxes<a class="headerlink" href="#plotting-boxes" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -837,7 +837,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-boxes.svg" /></p>
 <h2 id="plotting-boxes-with-custom-tick-labels">Plotting boxes with custom tick labels<a class="headerlink" href="#plotting-boxes-with-custom-tick-labels" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -883,7 +883,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-boxes-ticklabels.svg" /></p>
 <h2 id="plotting-broken-curves-when-nan-values-are-present">Plotting broken curves when NaN values are present<a class="headerlink" href="#plotting-broken-curves-when-nan-values-are-present" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -907,7 +907,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-missing-data.svg" /></p>
 <h2 id="plotting-a-3d-helix-plot">Plotting a 3D helix plot<a class="headerlink" href="#plotting-a-3d-helix-plot" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -957,9 +957,9 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <p><img alt="" loading="lazy" src="../img/tutorials/example-3d-helix.svg" /></p>
 <h2 id="plotting-multiple-mixed-2d-and-3d-plots">Plotting multiple mixed 2D and 3D plots<a class="headerlink" href="#plotting-multiple-mixed-2d-and-3d-plots" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
-<span class="k">auto</span> <span class="nf">createHelixPlot</span><span class="p">()</span>
+<span class="k">auto</span> <span class="n">createHelixPlot</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="c1">// Create a vector with values from 0 to 100 divived into 2000 uniform intervals for the z-axis</span>
     <span class="n">Vec</span> <span class="n">z</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
@@ -997,7 +997,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
     <span class="k">return</span> <span class="n">plot</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// Create a vector with values from 0 to 5 divived into 200 uniform intervals for the x-axis</span>
     <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
@@ -1037,7 +1037,7 @@ pre-computed and stored in <code>std::vector</code> objects (see below).</p>
 <hr />
 <p><strong>main.cpp</strong>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">sciplot</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
@@ -1169,10 +1169,10 @@ should then contain the following directory:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
       
     
   </body>
