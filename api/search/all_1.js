@@ -15,6 +15,6 @@ var searchData=
   ['bottomleftfront_42',['bottomLeftFront',['../classsciplot_1_1BorderSpecs.html#a5dc3fa3beea8fa3e02256d2c9e51c71b',1,'sciplot::BorderSpecs']]],
   ['bottomrightback_43',['bottomRightBack',['../classsciplot_1_1BorderSpecs.html#ae433a2ea9cf7b452bca5ac02d0d74acb',1,'sciplot::BorderSpecs']]],
   ['bottomrightfront_44',['bottomRightFront',['../classsciplot_1_1BorderSpecs.html#a4d9784a418efee304a42b8fd996750d9',1,'sciplot::BorderSpecs']]],
-  ['boxwidthabsolute_45',['boxWidthAbsolute',['../classsciplot_1_1Plot.html#a145b65ac9293570028f127c2fcb6cd25',1,'sciplot::Plot::boxWidthAbsolute()'],['../classsciplot_1_1Plot3D.html#a145b65ac9293570028f127c2fcb6cd25',1,'sciplot::Plot3D::boxWidthAbsolute()']]],
-  ['boxwidthrelative_46',['boxWidthRelative',['../classsciplot_1_1Plot.html#ac85205dfb45ef5468d2e148446f978f4',1,'sciplot::Plot::boxWidthRelative()'],['../classsciplot_1_1Plot3D.html#ac85205dfb45ef5468d2e148446f978f4',1,'sciplot::Plot3D::boxWidthRelative()']]]
+  ['boxwidthabsolute_45',['boxWidthAbsolute',['../classsciplot_1_1PlotBase.html#a145b65ac9293570028f127c2fcb6cd25',1,'sciplot::PlotBase']]],
+  ['boxwidthrelative_46',['boxWidthRelative',['../classsciplot_1_1PlotBase.html#ac85205dfb45ef5468d2e148446f978f4',1,'sciplot::PlotBase']]]
 ];

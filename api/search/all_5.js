@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['figure_109',['Figure',['../classsciplot_1_1Figure.html',1,'Figure'],['../classsciplot_1_1Figure.html#ae6d2f5888c9965c7169e796456e5464a',1,'sciplot::Figure::Figure(const std::initializer_list&lt; std::initializer_list&lt; PlotXD &gt;&gt; &amp;plots)'],['../classsciplot_1_1Figure.html#a1b0664da264527482466c0152b92e385',1,'sciplot::Figure::Figure(const std::vector&lt; std::vector&lt; PlotXD &gt;&gt; &amp;plots)']]],
+  ['figure_109',['Figure',['../classsciplot_1_1Figure.html',1,'Figure'],['../classsciplot_1_1Figure.html#a529b1ef24afc948ffda29934712b886e',1,'sciplot::Figure::Figure(const std::initializer_list&lt; std::initializer_list&lt; PlotVariant &gt;&gt; &amp;plots)'],['../classsciplot_1_1Figure.html#a1e594fdd1ef79617aeb4aa6a24a2b230',1,'sciplot::Figure::Figure(const std::vector&lt; std::vector&lt; PlotVariant &gt;&gt; &amp;plots)']]],
   ['fillcolor_110',['fillColor',['../classsciplot_1_1FillSpecsOf.html#a3a9af50d7624b7e717eff660811640a1',1,'sciplot::FillSpecsOf']]],
   ['filledcurvesspecs_111',['FilledCurvesSpecs',['../classsciplot_1_1FilledCurvesSpecs.html',1,'sciplot']]],
   ['filledcurvesspecsof_112',['FilledCurvesSpecsOf',['../classsciplot_1_1FilledCurvesSpecsOf.html',1,'FilledCurvesSpecsOf&lt; DerivedSpecs &gt;'],['../classsciplot_1_1FilledCurvesSpecsOf.html#a3f20e8857687975da4c78e0420fccfbf',1,'sciplot::FilledCurvesSpecsOf::FilledCurvesSpecsOf()']]],
