@@ -1,6 +1,6 @@
 <map id="TextSpecs" name="TextSpecs">
-<area shape="rect" id="node1" title="The class used to specify text options." alt="" coords="55,229,139,256"/>
-<area shape="rect" id="node2" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="6,155,189,181"/>
-<area shape="rect" id="node3" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="5,80,189,107"/>
-<area shape="rect" id="node4" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="25,5,169,32"/>
+<area shape="rect" id="node1" title="The class used to specify text options." alt="" coords="61,229,148,256"/>
+<area shape="rect" id="node2" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="6,155,203,181"/>
+<area shape="rect" id="node3" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="5,80,204,107"/>
+<area shape="rect" id="node4" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="27,5,182,32"/>
 </map>
