@@ -271,6 +271,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation-using-fetchcontent" class="md-nav__link">
+    Installation using FetchContent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#installation-using-cmake" class="md-nav__link">
     Installation using CMake
   </a>
@@ -407,6 +414,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation-using-fetchcontent" class="md-nav__link">
+    Installation using FetchContent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#installation-using-cmake" class="md-nav__link">
     Installation using CMake
   </a>
@@ -452,6 +466,22 @@ directory named <code>sciplot</code>, you can now copy the directory <code>scipl
 to somewhere in your project directory and directly use <span style="font-family:'Comfortaa'">sciplot</span>.</p>
 <p>This quick and dirty solution should suffice in most cases. If this solution
 bothers you, read the next section!</p>
+<h2 id="installation-using-fetchcontent">Installation using FetchContent<a class="headerlink" href="#installation-using-fetchcontent" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://cmake.org/cmake/help/latest/module/FetchContent.html"><code>FetchContent</code></a> CMake module can
+also be used to fetch Sciplot properly:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">include</span><span class="p">(</span><span class="s">FetchContent</span><span class="p">)</span> <span class="c"># If not included already</span>
+
+<span class="nb">FetchContent_Declare</span><span class="p">(</span><span class="s">sciplot_content</span>
+  <span class="s">GIT_REPOSITORY</span> <span class="s">https://github.com/sciplot/sciplot.git</span>
+  <span class="s">GIT_TAG</span> <span class="s">master</span><span class="p">)</span>
+
+<span class="nb">FetchContent_GetProperties</span><span class="p">(</span><span class="s">sciplot_content</span><span class="p">)</span>
+<span class="nb">if</span><span class="p">(</span><span class="s">NOT</span> <span class="s">sciplot_content_POPULATED</span><span class="p">)</span>
+  <span class="nb">FetchContent_Populate</span><span class="p">(</span><span class="s">sciplot_content</span><span class="p">)</span>
+<span class="nb">endif</span><span class="p">()</span>
+
+<span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">sciplot_content_SOURCE_DIR</span><span class="o">}</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="installation-using-cmake">Installation using CMake<a class="headerlink" href="#installation-using-cmake" title="Permanent link">&para;</a></h2>
 <p>If you have <code>cmake</code> installed in your system, you can then install <span style="font-family:'Comfortaa'">sciplot</span>
 (and also build its tests and examples) as follows:</p>
