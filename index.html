@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://sciplot.github.io/">
       
       <link rel="icon" href="img/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1118c9be.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.f7f47774.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -361,32 +361,32 @@
 <p>So, you have an amazing C++ application for which you need plotting capabilities. You have searched around and discovered that the available library options for plotting in C++ are rather limited compared to other programming languages, such as Python.</p>
 <p>You have now found <span style="font-family:'Comfortaa'">sciplot</span>, whose goal is to enable you, C++ programmer, to conveniently produce beautiful plots as easy as in other high-level programming languages!</p>
 <p>Here is <span style="font-family:'Comfortaa'">sciplot</span> in action:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="nn">sciplot</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">sciplot</span><span class="p">;</span><span class="w"></span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// Create values for your x-axis</span>
-    <span class="n">Vec</span> <span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Create values for your x-axis</span>
+<span class="w">    </span><span class="n">Vec</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">5.0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Create a Plot object</span>
-    <span class="n">Plot</span> <span class="n">plot</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Create a Plot object</span>
+<span class="w">    </span><span class="n">Plot</span><span class="w"> </span><span class="n">plot</span><span class="p">;</span><span class="w"></span>
 
-    <span class="c1">// Set color palette</span>
-    <span class="n">plot</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Set color palette</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Draw a sine graph putting x on the x-axis and sin(x) on the y-axis</span>
-    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Draw a sine graph putting x on the x-axis and sin(x) on the y-axis</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Draw a cosine graph putting x on the x-axis and cos(x) on the y-axis</span>
-    <span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Draw a cosine graph putting x on the x-axis and cos(x) on the y-axis</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Show the plot in a pop-up window</span>
-    <span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">// Show the plot in a pop-up window</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span><span class="w"></span>
 
-    <span class="c1">// Save the plot to a PDF file</span>
-    <span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;plot.pdf&quot;</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="c1">// Save the plot to a PDF file</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;plot.pdf&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>After compiling and executing this C++ application, the following plot (<code>plot.pdf</code>) is produced:</p>
 <p><img alt="Plotting sin(x) and cos(x)" loading="lazy" src="img/home/demo-plot-palette-set2.svg" /></p>
@@ -456,7 +456,7 @@
     <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.2b46852b.min.js"></script>
+      <script src="assets/javascripts/bundle.febc23d1.min.js"></script>
       
     
   </body>
