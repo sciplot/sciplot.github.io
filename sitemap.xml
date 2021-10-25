@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sciplot.github.io/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sciplot.github.io/about/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sciplot.github.io/api/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sciplot.github.io/faq/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sciplot.github.io/installation/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sciplot.github.io/known_issues/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sciplot.github.io/tutorials/</loc>
-         <lastmod>2021-10-11</lastmod>
+         <lastmod>2021-10-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
