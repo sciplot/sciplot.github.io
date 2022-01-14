@@ -240,8 +240,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classsciplot_1_1HistogramStyleSpecs.html#a1e5a9b3e0926d5cba20fb62a9535f968">  128</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="classsciplot_1_1HistogramStyleSpecs.html#a1e5a9b3e0926d5cba20fb62a9535f968">HistogramStyleSpecs::repr</a>() const -&gt; std::<span class="keywordtype">string</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> supports_gap = (m_type == <span class="stringliteral">&quot;clustered&quot;</span> || m_type == <span class="stringliteral">&quot;errorbars&quot;</span>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> supports_linewidth = (m_type == <span class="stringliteral">&quot;errorbars&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    [[maybe_unused]] <span class="keyword">const</span> <span class="keyword">auto</span> supports_gap = (m_type == <span class="stringliteral">&quot;clustered&quot;</span> || m_type == <span class="stringliteral">&quot;errorbars&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    [[maybe_unused]] <span class="keyword">const</span> <span class="keyword">auto</span> supports_linewidth = (m_type == <span class="stringliteral">&quot;errorbars&quot;</span>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    std::stringstream ss;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    ss &lt;&lt; <span class="stringliteral">&quot;set style histogram&quot;</span> &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
@@ -273,7 +273,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div> <!-- DOXYSTRAP RELATED -->
 </div> <!-- DOXYSTRAP RELATED -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 10 2022 05:23:09 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+Generated on Fri Jan 14 2022 08:42:33 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
 </small></address>
 </body>
 </html>

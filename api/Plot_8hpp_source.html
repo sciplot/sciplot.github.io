@@ -387,7 +387,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    m_data += datastream.str();</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// Draw the data saved using a data set with index `m_numdatasets`. Increase number of data sets and set the line style specification (desired behavior is 1, 2, 3 (incrementing as new lines are plotted)).</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">return</span> draw(<span class="stringliteral">&quot;&#39;&quot;</span> + m_datafilename + <span class="stringliteral">&quot;&#39; index &quot;</span> + internal::str(m_numdatasets++), use, with).lineStyle(m_drawspecs.size());</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">return</span> draw(<span class="stringliteral">&quot;&#39;&quot;</span> + m_datafilename + <span class="stringliteral">&quot;&#39; index &quot;</span> + internal::str(m_numdatasets++), use, with).lineStyle(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (m_drawspecs.size()));</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> X, <span class="keyword">typename</span>... Vecs&gt;</div>
@@ -408,7 +408,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    m_data += datastream.str();</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">// Draw the data saved using a data set with index `m_numdatasets`. Increase number of data sets and set the line style specification (desired behavior is 1, 2, 3 (incrementing as new lines are plotted)).</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> draw(<span class="stringliteral">&quot;&#39;&quot;</span> + m_datafilename + <span class="stringliteral">&quot;&#39; index &quot;</span> + internal::str(m_numdatasets++), use, with).lineStyle(m_drawspecs.size());</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> draw(<span class="stringliteral">&quot;&#39;&quot;</span> + m_datafilename + <span class="stringliteral">&quot;&#39; index &quot;</span> + internal::str(m_numdatasets++), use, with).lineStyle(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (m_drawspecs.size()));</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> X, <span class="keyword">typename</span> Y&gt;</div>
@@ -608,7 +608,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        use += col.value + <span class="stringliteral">&quot;:&quot;</span>; <span class="comment">// e.g., &quot;1:4:5:7:&quot; (where 1 is x, 4 is y, 5 is ylow and 7 is yhigh for a yerrorlines plot)</span></div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    use = internal::trimright(use, <span class="charliteral">&#39;:&#39;</span>); <span class="comment">// e.g., &quot;1:4:5:7:&quot; =&gt; &quot;1:4:5:7&quot;</span></div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    std::string what = <span class="stringliteral">&quot;&#39;&quot;</span> + fname + <span class="stringliteral">&quot;&#39;&quot;</span>; <span class="comment">// e.g., &quot;&#39;myfile.dat&#39;&quot;</span></div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">return</span> draw(what, use, with).lineStyle(m_drawspecs.size()); <span class="comment">// e.g., draw(what=&quot;&#39;myfile.dat&#39;&quot;, use=&quot;1:2&quot;, with=&quot;lines&quot;);</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">return</span> draw(what, use, with).lineStyle(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (m_drawspecs.size())); <span class="comment">// e.g., draw(what=&quot;&#39;myfile.dat&#39;&quot;, use=&quot;1:2&quot;, with=&quot;lines&quot;);</span></div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;}</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
 <div class="line"><a name="l00551"></a><span class="lineno"><a class="line" href="classsciplot_1_1Plot.html#a3d4769a6cb4713fb66e30c9e0a4676a7">  551</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="classsciplot_1_1Plot.html#a912c12c75d40f7dc6d14a689667d77ff">Plot::drawCurve</a>(<span class="keyword">const</span> std::string&amp; fname, <a class="code" href="structsciplot_1_1ColumnIndex.html">ColumnIndex</a> xcol, <a class="code" href="structsciplot_1_1ColumnIndex.html">ColumnIndex</a> ycol) -&gt; <a class="code" href="classsciplot_1_1DrawSpecs.html">DrawSpecs</a>&amp;</div>
@@ -882,7 +882,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div> <!-- DOXYSTRAP RELATED -->
 </div> <!-- DOXYSTRAP RELATED -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 10 2022 05:23:09 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+Generated on Fri Jan 14 2022 08:42:33 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
 </small></address>
 </body>
 </html>
