@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://sciplot.github.io/installation/">
       
       <link rel="icon" href="../img/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.10">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.df45aa19.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
@@ -466,8 +466,9 @@
 <p>Installing <span style="font-family:'Comfortaa'">sciplot</span> is easy, since it is a <em>header-only library</em>. Follow the steps below.</p>
 <h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
 <p>Download <span style="font-family:'Comfortaa'">sciplot</span> by git cloning its <a href="https://github.com/sciplot/sciplot">GitHub repository</a>:</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/sciplot/sciplot --recursive
-</code></pre></div>
+<p><sub>~</sub>shell
+git clone <a href="https://github.com/sciplot/sciplot">https://github.com/sciplot/sciplot</a> --recursive
+<sub>~</sub></p>
 <h2 id="installation-by-copying">Installation by copying<a class="headerlink" href="#installation-by-copying" title="Permanent link">&para;</a></h2>
 <p>Assuming the git cloned repository or extracted source code resides in a
 directory named <code>sciplot</code>, you can now copy the directory <code>sciplot/sciplot</code>
@@ -477,34 +478,34 @@ bothers you, read the next section!</p>
 <h2 id="installation-using-fetchcontent">Installation using FetchContent<a class="headerlink" href="#installation-using-fetchcontent" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://cmake.org/cmake/help/latest/module/FetchContent.html"><code>FetchContent</code></a> CMake module can
 also be used to fetch Sciplot properly:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">include</span><span class="p">(</span><span class="s">FetchContent</span><span class="p">)</span><span class="w"> </span><span class="c"># If not included already</span>
-
-<span class="nb">FetchContent_Declare</span><span class="p">(</span><span class="s">sciplot_content</span>
-<span class="w">  </span><span class="s">GIT_REPOSITORY</span><span class="w"> </span><span class="s">https://github.com/sciplot/sciplot.git</span>
-<span class="w">  </span><span class="s">GIT_TAG</span><span class="w"> </span><span class="s">master</span><span class="p">)</span>
-
-<span class="nb">FetchContent_GetProperties</span><span class="p">(</span><span class="s">sciplot_content</span><span class="p">)</span>
-<span class="nb">if</span><span class="p">(</span><span class="s">NOT</span><span class="w"> </span><span class="s">sciplot_content_POPULATED</span><span class="p">)</span>
-<span class="w">  </span><span class="nb">FetchContent_Populate</span><span class="p">(</span><span class="s">sciplot_content</span><span class="p">)</span>
-<span class="nb">endif</span><span class="p">()</span>
-
-<span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">sciplot_content_SOURCE_DIR</span><span class="o">}</span><span class="p">)</span>
-</code></pre></div>
+<p>```cmake
+include(FetchContent) # If not included already</p>
+<p>FetchContent_Declare(sciplot_content
+  GIT_REPOSITORY <a href="https://github.com/sciplot/sciplot.git">https://github.com/sciplot/sciplot.git</a>
+  GIT_TAG master)</p>
+<p>FetchContent_GetProperties(sciplot_content)
+if(NOT sciplot_content_POPULATED)
+  FetchContent_Populate(sciplot_content)
+endif()</p>
+<p>include_directories(${sciplot_content_SOURCE_DIR})
+```</p>
 <h2 id="installation-using-cmake">Installation using CMake<a class="headerlink" href="#installation-using-cmake" title="Permanent link">&para;</a></h2>
 <p>If you have <code>cmake</code> installed in your system, you can then install <span style="font-family:'Comfortaa'">sciplot</span>
 (and also build its tests and examples) as follows:</p>
-<div class="highlight"><pre><span></span><code>mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
+<p><sub>~</sub>shell
+mkdir build &amp;&amp; cd build
 cmake ..
 cmake --build . --target install
-</code></pre></div>
+<sub>~</sub></p>
 <div class="admonition attention">
 <p>We assume above that you are in the root of the source code directory, under
 <code>sciplot</code>! The build directory will be created at <code>sciplot/build</code>.</p>
 </div>
 <p>The previous installation commands will require administrative rights in most
 systems. To install <span style="font-family:'Comfortaa'">sciplot</span> locally, use:</p>
-<div class="highlight"><pre><span></span><code>cmake .. -DCMAKE_INSTALL_PREFIX<span class="o">=</span>/some/local/dir
-</code></pre></div>
+<p><sub>~</sub>shell
+cmake .. -DCMAKE_INSTALL_PREFIX=/some/local/dir
+<sub>~</sub></p>
 <h2 id="installation-failed-what-do-i-do">Installation failed. What do I do?<a class="headerlink" href="#installation-failed-what-do-i-do" title="Permanent link">&para;</a></h2>
 <p>Check the <a href="../known_issues/">known issues</a> and if your problem persists, create a <a href="https://github.com/sciplot/sciplot/issues/new">new issue</a>, and let us know what happened and possibly how we can improve the installation process of <span style="font-family:'Comfortaa'">sciplot</span>.</p>
 
@@ -579,7 +580,7 @@ systems. To install <span style="font-family:'Comfortaa'">sciplot</span> locally
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>
