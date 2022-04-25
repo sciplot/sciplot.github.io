@@ -364,33 +364,33 @@
 <p>So, you have an amazing C++ application for which you need plotting capabilities. You have searched around and discovered that the available library options for plotting in C++ are rather limited compared to other programming languages, such as Python.</p>
 <p>You have now found <span style="font-family:'Comfortaa'">sciplot</span>, whose goal is to enable you, C++ programmer, to conveniently produce beautiful plots as easy as in other high-level programming languages!</p>
 <p>Here is <span style="font-family:'Comfortaa'">sciplot</span> in action:</p>
-<p>```c++</p>
-<h1 id="include">include <sciplot/sciplot.hpp><a class="headerlink" href="#include" title="Permanent link">&para;</a></h1>
-<p>using namespace sciplot;</p>
-<p>int main(int argc, char** argv)
-{
-    // Create values for your x-axis
-    Vec x = linspace(0.0, 5.0, 100);</p>
-<pre><code>// Create a Plot object
-Plot plot;
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">sciplot</span><span class="p">;</span><span class="w"></span>
 
-// Set color palette
-plot.palette("set2");
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Create values for your x-axis</span>
+<span class="w">    </span><span class="n">Vec</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">5.0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
 
-// Draw a sine graph putting x on the x-axis and sin(x) on the y-axis
-plot.drawCurve(x, std::sin(x)).label("sin(x)").lineWidth(4);
+<span class="w">    </span><span class="c1">// Create a Plot object</span>
+<span class="w">    </span><span class="n">Plot</span><span class="w"> </span><span class="n">plot</span><span class="p">;</span><span class="w"></span>
 
-// Draw a cosine graph putting x on the x-axis and cos(x) on the y-axis
-plot.drawCurve(x, std::cos(x)).label("cos(x)").lineWidth(4);
+<span class="w">    </span><span class="c1">// Set color palette</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">palette</span><span class="p">(</span><span class="s">&quot;set2&quot;</span><span class="p">);</span><span class="w"></span>
 
-// Show the plot in a pop-up window
-plot.show();
+<span class="w">    </span><span class="c1">// Draw a sine graph putting x on the x-axis and sin(x) on the y-axis</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;sin(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
 
-// Save the plot to a PDF file
-plot.save("plot.pdf");
-</code></pre>
-<p>}
-```</p>
+<span class="w">    </span><span class="c1">// Draw a cosine graph putting x on the x-axis and cos(x) on the y-axis</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">drawCurve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)).</span><span class="n">label</span><span class="p">(</span><span class="s">&quot;cos(x)&quot;</span><span class="p">).</span><span class="n">lineWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Show the plot in a pop-up window</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">show</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Save the plot to a PDF file</span>
+<span class="w">    </span><span class="n">plot</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s">&quot;plot.pdf&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>After compiling and executing this C++ application, the following plot (<code>plot.pdf</code>) is produced:</p>
 <p><img alt="Plotting sin(x) and cos(x)" loading="lazy" src="img/home/demo-plot-palette-set2.svg" /></p>
 <p>Do you want to change the colors?</p>
