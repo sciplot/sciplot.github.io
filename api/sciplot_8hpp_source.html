@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Licensed under the MIT License &lt;http://opensource.org/licenses/MIT&gt;.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Copyright (c) 2018-2021 Allan Leal</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Copyright (c) 2018-2022 Allan Leal, Bim Overbohm</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// of this software and associated documentation files (the &quot;Software&quot;), to deal</span></div>
@@ -162,17 +162,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif // _WINDOWS_</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// sciplot includes</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;sciplot/Constants.hpp&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;sciplot/Default.hpp&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;sciplot/Enums.hpp&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;sciplot/Figure.hpp&gt;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;sciplot/Palettes.hpp&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;sciplot/Plot.hpp&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;sciplot/Plot3D.hpp&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;sciplot/PlotBase.hpp&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;sciplot/StringOrDouble.hpp&gt;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;sciplot/Utils.hpp&gt;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;sciplot/Vec.hpp&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;sciplot/Canvas.hpp&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;sciplot/Constants.hpp&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;sciplot/Default.hpp&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;sciplot/Enums.hpp&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;sciplot/Figure.hpp&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;sciplot/Palettes.hpp&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;sciplot/Plot.hpp&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;sciplot/Plot2D.hpp&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;sciplot/Plot3D.hpp&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;sciplot/StringOrDouble.hpp&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;sciplot/Utils.hpp&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;sciplot/Vec.hpp&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.20-->
 <!-- start footer part -->
@@ -182,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div> <!-- DOXYSTRAP RELATED -->
 </div> <!-- DOXYSTRAP RELATED -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 14 2022 18:48:33 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+Generated on Thu Jul 14 2022 19:50:27 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
 </small></address>
 </body>
 </html>

@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The class used to create multiple plots in one canvas.  
+<p>The class used to create multiple plots in one canvas. A container for plots.  
  <a href="classsciplot_1_1Figure.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Figure_8hpp_source.html">Figure.hpp</a>&gt;</code></p>
@@ -141,30 +141,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a529b1ef24afc948ffda29934712b886e"><td class="memItemLeft" align="right" valign="top"><a id="a529b1ef24afc948ffda29934712b886e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a529b1ef24afc948ffda29934712b886e">Figure</a> (const std::initializer_list&lt; std::initializer_list&lt; PlotVariant &gt;&gt; &amp;plots)</td></tr>
-<tr class="memdesc:a529b1ef24afc948ffda29934712b886e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classsciplot_1_1Figure.html" title="The class used to create multiple plots in one canvas.">Figure</a> object with given plots. <br /></td></tr>
+<tr class="memdesc:a529b1ef24afc948ffda29934712b886e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classsciplot_1_1Figure.html" title="The class used to create multiple plots in one canvas. A container for plots.">Figure</a> object with given plots. <br /></td></tr>
 <tr class="separator:a529b1ef24afc948ffda29934712b886e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e594fdd1ef79617aeb4aa6a24a2b230"><td class="memItemLeft" align="right" valign="top"><a id="a1e594fdd1ef79617aeb4aa6a24a2b230"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a1e594fdd1ef79617aeb4aa6a24a2b230">Figure</a> (const std::vector&lt; std::vector&lt; PlotVariant &gt;&gt; &amp;plots)</td></tr>
-<tr class="memdesc:a1e594fdd1ef79617aeb4aa6a24a2b230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classsciplot_1_1Figure.html" title="The class used to create multiple plots in one canvas.">Figure</a> object with given plots. <br /></td></tr>
+<tr class="memdesc:a1e594fdd1ef79617aeb4aa6a24a2b230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classsciplot_1_1Figure.html" title="The class used to create multiple plots in one canvas. A container for plots.">Figure</a> object with given plots. <br /></td></tr>
 <tr class="separator:a1e594fdd1ef79617aeb4aa6a24a2b230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9cff2b457e5a083282c0dc679120b9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a0f9cff2b457e5a083282c0dc679120b9">autoclean</a> (bool enable=true) -&gt; void</td></tr>
-<tr class="memdesc:a0f9cff2b457e5a083282c0dc679120b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle automatic cleaning of temporary files (enabled by default).  <a href="classsciplot_1_1Figure.html#a0f9cff2b457e5a083282c0dc679120b9">More...</a><br /></td></tr>
-<tr class="separator:a0f9cff2b457e5a083282c0dc679120b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e87359512030d0ccd2657e6b381444b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsciplot_1_1Plot.html">Plot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a6e87359512030d0ccd2657e6b381444b">get</a> (int i, int j)</td></tr>
+<tr class="memdesc:a6e87359512030d0ccd2657e6b381444b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to generic plot object in figure.  <a href="classsciplot_1_1Figure.html#a6e87359512030d0ccd2657e6b381444b">More...</a><br /></td></tr>
+<tr class="separator:a6e87359512030d0ccd2657e6b381444b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc14de648ff7d48b190ca0e5e8a4c37"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0bc14de648ff7d48b190ca0e5e8a4c37"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a0bc14de648ff7d48b190ca0e5e8a4c37">get</a> (int i, int j)</td></tr>
+<tr class="memdesc:a0bc14de648ff7d48b190ca0e5e8a4c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to specific plot object (2D / 3D) in figure.  <a href="classsciplot_1_1Figure.html#a0bc14de648ff7d48b190ca0e5e8a4c37">More...</a><br /></td></tr>
+<tr class="separator:a0bc14de648ff7d48b190ca0e5e8a4c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a59be1a03bb49a39c661558b691a10"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#ae2a59be1a03bb49a39c661558b691a10">palette</a> (const std::string &amp;name) -&gt; <a class="el" href="classsciplot_1_1Figure.html">Figure</a> &amp;</td></tr>
-<tr class="memdesc:ae2a59be1a03bb49a39c661558b691a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the palette of colors for the plot.  <a href="classsciplot_1_1Figure.html#ae2a59be1a03bb49a39c661558b691a10">More...</a><br /></td></tr>
+<tr class="memdesc:ae2a59be1a03bb49a39c661558b691a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the palette of colors for all plots in the figure.  <a href="classsciplot_1_1Figure.html#ae2a59be1a03bb49a39c661558b691a10">More...</a><br /></td></tr>
 <tr class="separator:ae2a59be1a03bb49a39c661558b691a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28707c49c844df5efa6bcd09de767a6e"><td class="memItemLeft" align="right" valign="top"><a id="a28707c49c844df5efa6bcd09de767a6e"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a28707c49c844df5efa6bcd09de767a6e">size</a> (std::size_t width, std::size_t height) -&gt; <a class="el" href="classsciplot_1_1Figure.html">Figure</a> &amp;</td></tr>
-<tr class="memdesc:a28707c49c844df5efa6bcd09de767a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the plot (in unit of points, with 1 inch = 72 points). <br /></td></tr>
-<tr class="separator:a28707c49c844df5efa6bcd09de767a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7870ee2a31c32387ebbc549203d51653"><td class="memItemLeft" align="right" valign="top"><a id="a7870ee2a31c32387ebbc549203d51653"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a7870ee2a31c32387ebbc549203d51653">fontName</a> (std::string name) -&gt; void</td></tr>
-<tr class="memdesc:a7870ee2a31c32387ebbc549203d51653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font name for the plots in the figure (e.g., Helvetica, Georgia, Times). <br /></td></tr>
-<tr class="separator:a7870ee2a31c32387ebbc549203d51653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2563a9064f1992b8484d541bff02b6a2"><td class="memItemLeft" align="right" valign="top"><a id="a2563a9064f1992b8484d541bff02b6a2"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a2563a9064f1992b8484d541bff02b6a2">fontSize</a> (std::size_t <a class="el" href="classsciplot_1_1Figure.html#a28707c49c844df5efa6bcd09de767a6e">size</a>) -&gt; void</td></tr>
-<tr class="memdesc:a2563a9064f1992b8484d541bff02b6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font size for the plots in the figure (e.g., 10, 12, 16). <br /></td></tr>
-<tr class="separator:a2563a9064f1992b8484d541bff02b6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ff52a26c51b3d782b084b31822bfbc"><td class="memItemLeft" align="right" valign="top"><a id="a26ff52a26c51b3d782b084b31822bfbc"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a26ff52a26c51b3d782b084b31822bfbc">layout</a> () -&gt; <a class="el" href="classsciplot_1_1LayoutSpecs.html">LayoutSpecs</a> &amp;</td></tr>
+<tr class="memdesc:a26ff52a26c51b3d782b084b31822bfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the layout of the figure inside the canvas and return a reference to the corresponding specs object. <br /></td></tr>
+<tr class="separator:a26ff52a26c51b3d782b084b31822bfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aac45f7aae6c7260b80d17eb1d776f3"><td class="memItemLeft" align="right" valign="top"><a id="a1aac45f7aae6c7260b80d17eb1d776f3"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a1aac45f7aae6c7260b80d17eb1d776f3">fontName</a> (std::string name) -&gt; <a class="el" href="classsciplot_1_1Figure.html">Figure</a> &amp;</td></tr>
+<tr class="memdesc:a1aac45f7aae6c7260b80d17eb1d776f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font name for all the plots in the figure (e.g., Helvetica, Georgia, Times). <br /></td></tr>
+<tr class="separator:a1aac45f7aae6c7260b80d17eb1d776f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358efe56d6ee37b88f5ec057d5837a27"><td class="memItemLeft" align="right" valign="top"><a id="a358efe56d6ee37b88f5ec057d5837a27"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a358efe56d6ee37b88f5ec057d5837a27">fontSize</a> (std::size_t size) -&gt; <a class="el" href="classsciplot_1_1Figure.html">Figure</a> &amp;</td></tr>
+<tr class="memdesc:a358efe56d6ee37b88f5ec057d5837a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font size for all the plots in the figure (e.g., 10, 12, 16). <br /></td></tr>
+<tr class="separator:a358efe56d6ee37b88f5ec057d5837a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92728fe61c1cf0ad1c7d678ec9520ef0"><td class="memItemLeft" align="right" valign="top"><a id="a92728fe61c1cf0ad1c7d678ec9520ef0"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a92728fe61c1cf0ad1c7d678ec9520ef0">title</a> (const std::string &amp;title) -&gt; <a class="el" href="classsciplot_1_1Figure.html">Figure</a> &amp;</td></tr>
 <tr class="memdesc:a92728fe61c1cf0ad1c7d678ec9520ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the title of the figure. <br /></td></tr>
@@ -173,22 +177,24 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#ac0a10ce760d2344f0bc53d69e298efda">saveplotdata</a> () const -&gt; void</td></tr>
 <tr class="memdesc:ac0a10ce760d2344f0bc53d69e298efda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the current plot data of all plots to the data file(s). <br /></td></tr>
 <tr class="separator:ac0a10ce760d2344f0bc53d69e298efda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f14b214468c3c386699910d62a9694"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a02f14b214468c3c386699910d62a9694">show</a> () const -&gt; void</td></tr>
-<tr class="memdesc:a02f14b214468c3c386699910d62a9694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the figure in a pop-up window.  <a href="classsciplot_1_1Figure.html#a02f14b214468c3c386699910d62a9694">More...</a><br /></td></tr>
-<tr class="separator:a02f14b214468c3c386699910d62a9694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283b71fb56b2ee8bf4a00dd5db302c59"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a283b71fb56b2ee8bf4a00dd5db302c59">save</a> (const std::string &amp;filename) const -&gt; void</td></tr>
-<tr class="memdesc:a283b71fb56b2ee8bf4a00dd5db302c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the figure in a file, with its extension defining the file format.  <a href="classsciplot_1_1Figure.html#a283b71fb56b2ee8bf4a00dd5db302c59">More...</a><br /></td></tr>
-<tr class="separator:a283b71fb56b2ee8bf4a00dd5db302c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0631220457cca998fba3907781b22368"><td class="memItemLeft" align="right" valign="top"><a id="a0631220457cca998fba3907781b22368"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a0631220457cca998fba3907781b22368">cleanup</a> () const -&gt; void</td></tr>
 <tr class="memdesc:a0631220457cca998fba3907781b22368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all files used to store plot data or scripts. <br /></td></tr>
 <tr class="separator:a0631220457cca998fba3907781b22368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5a9b3e0926d5cba20fb62a9535f968"><td class="memItemLeft" align="right" valign="top"><a id="a1e5a9b3e0926d5cba20fb62a9535f968"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsciplot_1_1Figure.html#a1e5a9b3e0926d5cba20fb62a9535f968">repr</a> () const -&gt; std::string</td></tr>
+<tr class="memdesc:a1e5a9b3e0926d5cba20fb62a9535f968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert this figure into a gnuplot formatted string. <br /></td></tr>
+<tr class="separator:a1e5a9b3e0926d5cba20fb62a9535f968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9710f6c48c22212dd0263c2283835da"><td class="memItemLeft" align="right" valign="top"><a id="aa9710f6c48c22212dd0263c2283835da"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:aa9710f6c48c22212dd0263c2283835da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsciplot_1_1Plot2D.html">Plot2D</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (int i, int j)</td></tr>
+<tr class="separator:aa9710f6c48c22212dd0263c2283835da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The class used to create multiple plots in one canvas. </p>
+<div class="textblock"><p>The class used to create multiple plots in one canvas. A container for plots. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0f9cff2b457e5a083282c0dc679120b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f9cff2b457e5a083282c0dc679120b9">&#9670;&nbsp;</a></span>autoclean()</h2>
+<a id="a6e87359512030d0ccd2657e6b381444b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e87359512030d0ccd2657e6b381444b">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,11 +203,21 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto autoclean </td>
+          <td class="memname"><a class="el" href="classsciplot_1_1Plot.html">Plot</a> &amp; get </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em> = <code>true</code></td><td>)</td>
-          <td> -&gt; void</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -211,8 +227,39 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Toggle automatic cleaning of temporary files (enabled by default). </p>
-<p>Pass false if you want to keep your script / data files. Call <a class="el" href="classsciplot_1_1Figure.html#a0631220457cca998fba3907781b22368" title="Delete all files used to store plot data or scripts.">cleanup()</a> to remove those files manually. </p>
+<p>Get reference to generic plot object in figure. </p>
+<dl class="section note"><dt>Note</dt><dd>Will throw if plot does not exist </dd></dl>
+
+</div>
+</div>
+<a id="a0bc14de648ff7d48b190ca0e5e8a4c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc14de648ff7d48b190ca0e5e8a4c37">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T&amp; get </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get reference to specific plot object (2D / 3D) in figure. </p>
+<dl class="section note"><dt>Note</dt><dd>Will throw if plot does not exist or T is of wrong type </dd></dl>
 
 </div>
 </div>
@@ -240,70 +287,13 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Set the palette of colors for the plot. </p>
+<p>Set the palette of colors for all plots in the figure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Any palette name displayed in <a href="https://github.com/Gnuplotting/gnuplot-palettes">https://github.com/Gnuplotting/gnuplot-palettes</a>, such as "viridis", "parula", "jet". </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a02f14b214468c3c386699910d62a9694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f14b214468c3c386699910d62a9694">&#9670;&nbsp;</a></span>show()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto show </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; void</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Show the figure in a pop-up window. </p>
-<dl class="section note"><dt>Note</dt><dd>This method removes temporary files after saving if <code>Figure::autoclean(true)</code> (default). </dd></dl>
-
-</div>
-</div>
-<a id="a283b71fb56b2ee8bf4a00dd5db302c59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a283b71fb56b2ee8bf4a00dd5db302c59">&#9670;&nbsp;</a></span>save()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto save </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td> const -&gt; void</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Save the figure in a file, with its extension defining the file format. </p>
-<p>The extension of the file name determines the file format. The supported formats are: <code>pdf</code>, <code>eps</code>, <code>svg</code>, <code>png</code>, and <code>jpeg</code>. Thus, to save the figure in <code>pdf</code> format, choose a file name as in <code>fig.pdf</code>. </p><dl class="section note"><dt>Note</dt><dd>This method removes temporary files after saving if <code>Figure::autoclean(true)</code> (default). </dd></dl>
 
 </div>
 </div>
@@ -319,7 +309,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div> <!-- DOXYSTRAP RELATED -->
 </div> <!-- DOXYSTRAP RELATED -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 14 2022 18:48:33 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+Generated on Thu Jul 14 2022 19:50:28 for sciplot by&#160;<a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
 </small></address>
 </body>
 </html>

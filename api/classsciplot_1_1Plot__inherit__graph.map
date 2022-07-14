@@ -1,4 +1,5 @@
 <map id="Plot" name="Plot">
-<area shape="rect" id="node1" title="The class used to create a plot containing graphical elements." alt="" coords="21,80,68,107"/>
-<area shape="rect" id="node2" href="$classsciplot_1_1PlotBase.html" title="The class used to create a plot containing graphical elements." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node1" title="The class used to create a plot containing graphical elements." alt="" coords="59,5,105,32"/>
+<area shape="rect" id="node2" href="$classsciplot_1_1Plot2D.html" title="The class used to create a plot containing graphical elements." alt="" coords="5,80,71,107"/>
+<area shape="rect" id="node3" href="$classsciplot_1_1Plot3D.html" title="The class used to create a plot containing graphical elements." alt="" coords="95,80,160,107"/>
 </map>
