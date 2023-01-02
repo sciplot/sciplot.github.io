@@ -471,7 +471,7 @@
 <p>Installing <span style="font-family:'Comfortaa'">sciplot</span> is easy, since it is a <em>header-only library</em>. Follow the steps below.</p>
 <h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
 <p>Download <span style="font-family:'Comfortaa'">sciplot</span> by git cloning its <a href="https://github.com/sciplot/sciplot">GitHub repository</a>:</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/sciplot/sciplot --recursive
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/sciplot/sciplot<span class="w"> </span>--recursive
 </code></pre></div>
 <h2 id="installation-by-copying">Installation by copying<a class="headerlink" href="#installation-by-copying" title="Permanent link">&para;</a></h2>
 <p>Assuming the git cloned repository or extracted source code resides in a
@@ -498,9 +498,9 @@ also be used to fetch Sciplot properly:</p>
 <h2 id="installation-using-cmake">Installation using CMake<a class="headerlink" href="#installation-using-cmake" title="Permanent link">&para;</a></h2>
 <p>If you have <code>cmake</code> installed in your system, you can then install <span style="font-family:'Comfortaa'">sciplot</span>
 (and also build its tests and examples) as follows:</p>
-<div class="highlight"><pre><span></span><code>mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
-cmake ..
-cmake --build . --target install
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+cmake<span class="w"> </span>..
+cmake<span class="w"> </span>--build<span class="w"> </span>.<span class="w"> </span>--target<span class="w"> </span>install
 </code></pre></div>
 <div class="admonition attention">
 <p>We assume above that you are in the root of the source code directory, under
@@ -508,7 +508,7 @@ cmake --build . --target install
 </div>
 <p>The previous installation commands will require administrative rights in most
 systems. To install <span style="font-family:'Comfortaa'">sciplot</span> locally, use:</p>
-<div class="highlight"><pre><span></span><code>cmake .. -DCMAKE_INSTALL_PREFIX<span class="o">=</span>/some/local/dir
+<div class="highlight"><pre><span></span><code>cmake<span class="w"> </span>..<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>/some/local/dir
 </code></pre></div>
 <h2 id="installation-failed-what-do-i-do">Installation failed. What do I do?<a class="headerlink" href="#installation-failed-what-do-i-do" title="Permanent link">&para;</a></h2>
 <p>Check the <a href="../known_issues/">known issues</a> and if your problem persists, create a <a href="https://github.com/sciplot/sciplot/issues/new">new issue</a>, and let us know what happened and possibly how we can improve the installation process of <span style="font-family:'Comfortaa'">sciplot</span>.</p>

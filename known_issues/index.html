@@ -453,18 +453,18 @@
 <h1 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h1>
 <h2 id="i-get-compiler-errors-when-compiling-for-windows">I get compiler errors when compiling for Windows<a class="headerlink" href="#i-get-compiler-errors-when-compiling-for-windows" title="Permanent link">&para;</a></h2>
 <p>Make sure you include <code>windows.h</code> <strong>AFTER</strong> including <span style="font-family:'Comfortaa'">sciplot</span>:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="c1"> // FIRST THINGS FIRST!</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="c1"> // FIRST THINGS FIRST!</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">WINAPI</span><span class="w"> </span><span class="nf">wWinMain</span><span class="p">(</span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hInstance</span><span class="p">,</span><span class="w"> </span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hPrevInstance</span><span class="p">,</span><span class="w"> </span><span class="n">PWSTR</span><span class="w"> </span><span class="n">pCmdLine</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">CmdShow</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">WINAPI</span><span class="w"> </span><span class="nf">wWinMain</span><span class="p">(</span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hInstance</span><span class="p">,</span><span class="w"> </span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hPrevInstance</span><span class="p">,</span><span class="w"> </span><span class="n">PWSTR</span><span class="w"> </span><span class="n">pCmdLine</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">CmdShow</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="c1">//...</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 </code></pre></div>
 <p>See issue <a href="https://github.com/sciplot/sciplot/issues/70">#70</a>.</p>
 <h2 id="i-still-have-problems-when-compiling-for-windows">I still have problems when compiling for Windows<a class="headerlink" href="#i-still-have-problems-when-compiling-for-windows" title="Permanent link">&para;</a></h2>
 <p>Add some defines before you include <code>windows.h</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sciplot/sciplot.hpp&gt;</span>
 
 <span class="cp">#ifndef WIN32_LEAN_AND_MEAN</span>
 <span class="w">    </span><span class="cp">#define WIN32_LEAN_AND_MEAN</span>
@@ -475,12 +475,12 @@
 <span class="cp">#ifndef NOMINMAX</span>
 <span class="w">    </span><span class="cp">#define NOMINMAX</span>
 <span class="cp">#endif</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">WINAPI</span><span class="w"> </span><span class="nf">wWinMain</span><span class="p">(</span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hInstance</span><span class="p">,</span><span class="w"> </span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hPrevInstance</span><span class="p">,</span><span class="w"> </span><span class="n">PWSTR</span><span class="w"> </span><span class="n">pCmdLine</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">CmdShow</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">WINAPI</span><span class="w"> </span><span class="nf">wWinMain</span><span class="p">(</span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hInstance</span><span class="p">,</span><span class="w"> </span><span class="n">HINSTANCE</span><span class="w"> </span><span class="n">hPrevInstance</span><span class="p">,</span><span class="w"> </span><span class="n">PWSTR</span><span class="w"> </span><span class="n">pCmdLine</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">CmdShow</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="c1">//...</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="i-have-problems-setting-a-grid-for-my-plot">I have problems setting a grid for my plot<a class="headerlink" href="#i-have-problems-setting-a-grid-for-my-plot" title="Permanent link">&para;</a></h2>
 <p>This might be a <a href="https://sourceforge.net/p/gnuplot/bugs/2414/">bug</a> in some versions of gnuplot. See issue <a href="https://github.com/sciplot/sciplot/issues/73">#73</a>.</p>
