@@ -1,8 +1,8 @@
 <map id="GridSpecsBase" name="GridSpecsBase">
-<area shape="rect" id="node1" title="The class used to specify options for grid lines along axis tics (major or minor)." alt="" coords="529,56,648,83"/>
-<area shape="rect" id="node6" href="$classsciplot_1_1GridSpecs.html" title="The class used to specify options for grid." alt="" coords="696,56,783,83"/>
-<area shape="rect" id="node2" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="246,5,475,32"/>
-<area shape="rect" id="node3" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="5,56,192,83"/>
-<area shape="rect" id="node4" href="$classsciplot_1_1DepthSpecsOf.html" title=" " alt="" coords="240,56,481,83"/>
-<area shape="rect" id="node5" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="242,107,479,133"/>
+<area shape="rect" id="node1" title="The class used to specify options for grid lines along axis tics (major or minor)." alt="" coords="528,59,646,88"/>
+<area shape="rect" id="node6" href="$classsciplot_1_1GridSpecs.html" title="The class used to specify options for grid." alt="" coords="694,59,781,88"/>
+<area shape="rect" id="node2" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="246,5,474,34"/>
+<area shape="rect" id="node3" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="5,59,192,88"/>
+<area shape="rect" id="node4" href="$classsciplot_1_1DepthSpecsOf.html" title=" " alt="" coords="240,59,480,88"/>
+<area shape="rect" id="node5" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="242,112,478,141"/>
 </map>

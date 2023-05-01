@@ -1,5 +1,5 @@
 <map id="StringOrDouble" name="StringOrDouble">
-<area shape="rect" id="node1" title="An auxiliary type used to store a string value, while the input can also be a double." alt="" coords="24,171,145,197"/>
-<area shape="rect" id="node2" title="STL class." alt="" coords="55,81,114,108"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node1" title="An auxiliary type used to store a string value, while the input can also be a double." alt="" coords="24,178,144,207"/>
+<area shape="rect" id="node2" title="STL class." alt="" coords="55,84,113,113"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="5,5,163,34"/>
 </map>

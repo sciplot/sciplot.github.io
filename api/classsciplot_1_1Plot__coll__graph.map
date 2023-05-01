@@ -1,52 +1,52 @@
 <map id="Plot" name="Plot">
-<area shape="rect" id="node1" title="The class used to create a plot containing graphical elements." alt="" coords="1519,525,1565,552"/>
-<area shape="rect" id="node2" href="$classsciplot_1_1BorderSpecs.html" title="The class used to specify options for plot border." alt="" coords="1161,56,1263,83"/>
-<area shape="rect" id="node3" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="763,5,977,32"/>
-<area shape="rect" id="node4" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="265,5,435,32"/>
-<area shape="rect" id="node5" href="$classsciplot_1_1DepthSpecsOf.html" title=" " alt="" coords="757,56,983,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1104,107,1320,133"/>
-<area shape="rect" id="node7" href="$classsciplot_1_1DrawSpecs.html" title="The class where options for the plotted element can be specified." alt="" coords="823,107,917,133"/>
-<area shape="rect" id="node8" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="248,56,452,83"/>
-<area shape="rect" id="node9" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="11,133,174,160"/>
-<area shape="rect" id="node10" href="$classsciplot_1_1PointSpecsOf.html" title=" " alt="" coords="245,107,455,133"/>
-<area shape="rect" id="node11" href="$classsciplot_1_1FillSpecsOf.html" title=" " alt="" coords="252,157,448,184"/>
-<area shape="rect" id="node12" href="$classsciplot_1_1FilledCurvesSpecsOf.html" title=" " alt="" coords="273,209,427,250"/>
-<area shape="rect" id="node13" href="$classsciplot_1_1HistogramStyleSpecs.html" title="The class used to specify histogram style options." alt="" coords="1131,157,1293,184"/>
-<area shape="rect" id="node14" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="755,157,985,184"/>
-<area shape="rect" id="node15" title="STL class." alt="" coords="841,297,899,324"/>
-<area shape="rect" id="node35" title=" " alt="" coords="1133,359,1291,385"/>
-<area shape="rect" id="node16" title="STL class." alt="" coords="271,275,429,301"/>
-<area shape="rect" id="node17" href="$classsciplot_1_1TicsSpecsMinor.html" title="The class used to specify options for minor tics of a specific axis." alt="" coords="1151,417,1273,444"/>
-<area shape="rect" id="node18" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="749,355,991,381"/>
-<area shape="rect" id="node19" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="255,325,445,352"/>
-<area shape="rect" id="node20" href="$classsciplot_1_1AxisLabelSpecs.html" title="The specifications for an axis label (e.g., xlabel, ylabel, etc.)" alt="" coords="1151,483,1273,509"/>
-<area shape="rect" id="node21" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="753,419,987,445"/>
-<area shape="rect" id="node22" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="233,376,467,403"/>
-<area shape="rect" id="node23" href="$classsciplot_1_1TicsSpecs.html" title="The class used to specify options for tics." alt="" coords="1169,563,1255,589"/>
-<area shape="rect" id="node24" href="$classsciplot_1_1TicsSpecsBaseOf.html" title=" " alt="" coords="757,496,983,523"/>
-<area shape="rect" id="node25" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="252,427,448,453"/>
-<area shape="rect" id="node26" href="$classsciplot_1_1OffsetSpecsOf.html" title=" " alt="" coords="246,477,454,504"/>
-<area shape="rect" id="node27" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="248,528,452,555"/>
-<area shape="rect" id="node28" href="$classsciplot_1_1LegendSpecs.html" title="The class used to specify options for legend." alt="" coords="1159,629,1265,656"/>
-<area shape="rect" id="node29" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="761,579,979,605"/>
-<area shape="rect" id="node30" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="241,579,459,605"/>
-<area shape="rect" id="node31" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="5,655,180,681"/>
-<area shape="rect" id="node32" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="497,629,723,656"/>
-<area shape="rect" id="node33" href="$classsciplot_1_1TitleSpecsOf.html" title=" " alt="" coords="501,680,719,707"/>
-<area shape="rect" id="node34" href="$classsciplot_1_1FrameSpecsOf.html" title=" " alt="" coords="495,731,725,757"/>
-<area shape="rect" id="node36" href="$classsciplot_1_1FillStyleSpecs.html" title="The class used to attach color or pattern fill options to a type." alt="" coords="1156,731,1268,757"/>
-<area shape="rect" id="node37" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="780,781,960,808"/>
-<area shape="rect" id="node38" href="$classsciplot_1_1TicsSpecsMajor.html" title="The class used to specify options for major tics of a specific axis." alt="" coords="1151,816,1273,843"/>
-<area shape="rect" id="node39" href="$classsciplot_1_1TicsSpecsBaseOf.html" title=" " alt="" coords="764,833,976,874"/>
-<area shape="rect" id="node40" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="233,781,467,808"/>
-<area shape="rect" id="node41" href="$classsciplot_1_1OffsetSpecsOf.html" title=" " alt="" coords="253,833,447,874"/>
-<area shape="rect" id="node42" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="229,899,471,925"/>
-<area shape="rect" id="node43" href="$classsciplot_1_1GridSpecs.html" title="The class used to specify options for grid." alt="" coords="1169,915,1255,941"/>
-<area shape="rect" id="node44" href="$classsciplot_1_1GridSpecsBase.html" title="The class used to specify options for grid lines along axis tics (major or minor)." alt="" coords="811,985,929,1012"/>
-<area shape="rect" id="node45" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="235,949,465,976"/>
-<area shape="rect" id="node46" href="$classsciplot_1_1DepthSpecsOf.html" title=" " alt="" coords="229,1000,471,1027"/>
-<area shape="rect" id="node47" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="231,1051,469,1077"/>
-<area shape="rect" id="node48" href="$classsciplot_1_1FontSpecs.html" title="The class used to specify font options." alt="" coords="1168,1003,1256,1029"/>
-<area shape="rect" id="node49" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="771,1061,969,1088"/>
-<area shape="rect" id="node50" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="272,1101,428,1128"/>
+<area shape="rect" id="node1" title="The class used to create a plot containing graphical elements." alt="" coords="1514,575,1561,604"/>
+<area shape="rect" id="node2" href="$classsciplot_1_1BorderSpecs.html" title="The class used to specify options for plot border." alt="" coords="1158,59,1260,88"/>
+<area shape="rect" id="node3" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="762,5,974,34"/>
+<area shape="rect" id="node4" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="264,5,434,34"/>
+<area shape="rect" id="node5" href="$classsciplot_1_1DepthSpecsOf.html" title=" " alt="" coords="756,59,980,88"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1101,112,1316,141"/>
+<area shape="rect" id="node7" href="$classsciplot_1_1DrawSpecs.html" title="The class where options for the plotted element can be specified." alt="" coords="821,112,915,141"/>
+<area shape="rect" id="node8" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="248,59,451,88"/>
+<area shape="rect" id="node9" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="12,139,173,168"/>
+<area shape="rect" id="node10" href="$classsciplot_1_1PointSpecsOf.html" title=" " alt="" coords="245,112,454,141"/>
+<area shape="rect" id="node11" href="$classsciplot_1_1FillSpecsOf.html" title=" " alt="" coords="252,165,447,194"/>
+<area shape="rect" id="node12" href="$classsciplot_1_1FilledCurvesSpecsOf.html" title=" " alt="" coords="272,218,426,264"/>
+<area shape="rect" id="node13" href="$classsciplot_1_1HistogramStyleSpecs.html" title="The class used to specify histogram style options." alt="" coords="1129,165,1289,194"/>
+<area shape="rect" id="node14" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="754,165,982,194"/>
+<area shape="rect" id="node15" title="STL class." alt="" coords="839,323,897,352"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1130,385,1287,414"/>
+<area shape="rect" id="node16" title="STL class." alt="" coords="271,293,428,322"/>
+<area shape="rect" id="node17" href="$classsciplot_1_1TicsSpecsMinor.html" title="The class used to specify options for minor tics of a specific axis." alt="" coords="1148,452,1270,481"/>
+<area shape="rect" id="node18" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="748,381,988,410"/>
+<area shape="rect" id="node19" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="254,347,444,376"/>
+<area shape="rect" id="node20" href="$classsciplot_1_1AxisLabelSpecs.html" title="The specifications for an axis label (e.g., xlabel, ylabel, etc.)" alt="" coords="1148,519,1270,548"/>
+<area shape="rect" id="node21" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="752,447,984,476"/>
+<area shape="rect" id="node22" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="233,400,466,429"/>
+<area shape="rect" id="node23" href="$classsciplot_1_1TicsSpecs.html" title="The class used to specify options for tics." alt="" coords="1166,599,1251,628"/>
+<area shape="rect" id="node24" href="$classsciplot_1_1TicsSpecsBaseOf.html" title=" " alt="" coords="755,533,981,562"/>
+<area shape="rect" id="node25" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="252,453,447,482"/>
+<area shape="rect" id="node26" href="$classsciplot_1_1OffsetSpecsOf.html" title=" " alt="" coords="246,507,453,536"/>
+<area shape="rect" id="node27" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="248,560,451,589"/>
+<area shape="rect" id="node28" href="$classsciplot_1_1LegendSpecs.html" title="The class used to specify options for legend." alt="" coords="1156,671,1262,700"/>
+<area shape="rect" id="node29" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="760,613,976,642"/>
+<area shape="rect" id="node30" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="241,613,458,642"/>
+<area shape="rect" id="node31" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="5,691,180,720"/>
+<area shape="rect" id="node32" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="496,665,721,694"/>
+<area shape="rect" id="node33" href="$classsciplot_1_1TitleSpecsOf.html" title=" " alt="" coords="499,716,718,745"/>
+<area shape="rect" id="node34" href="$classsciplot_1_1FrameSpecsOf.html" title=" " alt="" coords="493,767,724,796"/>
+<area shape="rect" id="node36" href="$classsciplot_1_1FillStyleSpecs.html" title="The class used to attach color or pattern fill options to a type." alt="" coords="1153,764,1264,793"/>
+<area shape="rect" id="node37" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="778,819,958,848"/>
+<area shape="rect" id="node38" href="$classsciplot_1_1TicsSpecsMajor.html" title="The class used to specify options for major tics of a specific axis." alt="" coords="1148,861,1270,890"/>
+<area shape="rect" id="node39" href="$classsciplot_1_1TicsSpecsBaseOf.html" title=" " alt="" coords="762,872,974,918"/>
+<area shape="rect" id="node40" href="$classsciplot_1_1TextSpecsOf.html" title=" " alt="" coords="233,819,465,848"/>
+<area shape="rect" id="node41" href="$classsciplot_1_1OffsetSpecsOf.html" title=" " alt="" coords="253,872,445,918"/>
+<area shape="rect" id="node42" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="229,941,469,970"/>
+<area shape="rect" id="node43" href="$classsciplot_1_1GridSpecs.html" title="The class used to specify options for grid." alt="" coords="1166,916,1252,945"/>
+<area shape="rect" id="node44" href="$classsciplot_1_1GridSpecsBase.html" title="The class used to specify options for grid lines along axis tics (major or minor)." alt="" coords="809,1021,927,1050"/>
+<area shape="rect" id="node45" href="$classsciplot_1_1LineSpecsOf.html" title=" " alt="" coords="235,995,463,1024"/>
+<area shape="rect" id="node46" href="$classsciplot_1_1DepthSpecsOf.html" title=" " alt="" coords="229,1048,469,1077"/>
+<area shape="rect" id="node47" href="$classsciplot_1_1ShowSpecsOf.html" title=" " alt="" coords="231,1101,467,1130"/>
+<area shape="rect" id="node48" href="$classsciplot_1_1FontSpecs.html" title="The class used to specify font options." alt="" coords="1165,989,1252,1018"/>
+<area shape="rect" id="node49" href="$classsciplot_1_1FontSpecsOf.html" title=" " alt="" coords="769,1128,967,1157"/>
+<area shape="rect" id="node50" href="$classsciplot_1_1Specs.html" title=" " alt="" coords="272,1155,427,1184"/>
 </map>
